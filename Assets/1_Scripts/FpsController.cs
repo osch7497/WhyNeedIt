@@ -46,9 +46,6 @@ public class FpsController : MonoBehaviour
         velocity.z = moveDir.z * moveSpeed;
 
         rb.linearVelocity = velocity;
-
-        Debug.Log(rb.linearVelocity);
-
         
         // 화면 이동
         lookInput = playerInput.Player.Look.ReadValue<Vector2>();

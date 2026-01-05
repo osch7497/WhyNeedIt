@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2d71f1a9fc5dfaf45afde9ddea509138
+timeCreated: 1513578500
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 19983
+  packageName: Japanese School Corridor
+  packageVersion: 2.0
+  assetPath: Assets/JP_School corridor_V2/Prefabs/plate01_1-3.prefab
+  uploadId: 294241

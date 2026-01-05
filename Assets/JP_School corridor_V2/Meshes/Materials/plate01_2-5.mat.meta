@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 25f7c7ae64b32734aa1128c203b703f1
+timeCreated: 1513577308
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 19983
+  packageName: Japanese School Corridor
+  packageVersion: 2.0
+  assetPath: Assets/JP_School corridor_V2/Meshes/Materials/plate01_2-5.mat
+  uploadId: 294241
