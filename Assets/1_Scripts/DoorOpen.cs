@@ -6,6 +6,11 @@ public class DoorOpen : MonoBehaviour
     public Transform playerCamera;
     public Animator FrontDoorAnimator;
     public Animator BackDoorAnimator;
+
+    void Start()
+    {
+        FrontDoorAnimator.SetBool("isOpen", true);
+    }
     
     void Update()
     {
