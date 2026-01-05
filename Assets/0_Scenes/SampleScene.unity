@@ -760,9 +760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76425f5bd0b0d4739b4f5a0f95a332da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FpsController
-  moveSpeed: 3
+  moveSpeed: 5
   lookSpeed: 15
-  gravity: -4.9
   playerCamera: {fileID: 1122990640}
 --- !u!54 &1309104473
 Rigidbody:
