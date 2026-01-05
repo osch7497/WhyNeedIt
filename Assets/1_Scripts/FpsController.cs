@@ -5,7 +5,6 @@ public class FpsController : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float lookSpeed = 15f;
-    public float gravity = -9.81f;
 
     public Transform playerCamera;
     
@@ -26,6 +25,9 @@ public class FpsController : MonoBehaviour
         {
             Debug.LogError("No Camera in FpsController");
         }
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     
     void OnEnable() => playerInput.Enable();
@@ -35,16 +37,18 @@ public class FpsController : MonoBehaviour
     {
         // 플레이어 이동
         moveInput = playerInput.Player.Move.ReadValue<Vector2>();
-        Vector3 velocity = rb.linearVelocity;
         
-        Vector3 move = new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed;
-        velocity.x = move.x;
-        velocity.z = move.z;
+        Vector3 moveDir = playerCamera.forward * moveInput.y + playerCamera.right * moveInput.x;
+        moveDir.y = 0f;
 
-        // 중력 가속도 적용
-        velocity.y += gravity * Time.fixedDeltaTime;
+        Vector3 velocity = rb.linearVelocity;
+        velocity.x = moveDir.x * moveSpeed;
+        velocity.z = moveDir.z * moveSpeed;
 
         rb.linearVelocity = velocity;
+
+        Debug.Log(rb.linearVelocity);
+
         
         // 화면 이동
         lookInput = playerInput.Player.Look.ReadValue<Vector2>();
