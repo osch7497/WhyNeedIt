@@ -59,9 +59,11 @@ public class ItemPickUpScript : MonoBehaviour
             BeforeDetect = hit.collider;
         }
         else if(BeforeDetect != null){OffGuide();}
-        if(inventoryManager.GetHand() != null){//만일 손에 들 아이템이 있다면
-            inventoryManager.GetHand().transform.position = ItemDisplay.transform.position;//손 위치로 아이템 이동
-            inventoryManager.GetHand().transform.rotation = transform.rotation;//방향 카메라와 동일하게 고정시킴
+        GameObject HandleItem = inventoryManager.GetHand();
+        if(HandleItem != null){//만일 손에 들 아이템이 있다면
+            Debug.Log($"rotation = {transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation}");
+            HandleItem.transform.position = ItemDisplay.transform.position;//손 위치로 아이템 이동
+            HandleItem.transform.rotation = transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation;//방향 카메라와 동일하게 고정시킴
         }
     }
     void OffGuide()//UI 종료 메서드
