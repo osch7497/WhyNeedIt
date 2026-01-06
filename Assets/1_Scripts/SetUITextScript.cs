@@ -9,6 +9,7 @@ public class SetUITextScript : MonoBehaviour
     {   
         Player = GameObject.FindWithTag("MainCamera");
         transform.localPosition = Vector3.zero;
+        transform.Translate(0,-0.5f,0);
         GuideText = GetComponentInChildren<TextMeshProUGUI>();
         GuideText.text = $"{transform.parent.name}를 줍기";
         Debug.Log($"변경된 내용:{GuideText.text}");
