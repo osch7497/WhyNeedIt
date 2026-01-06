@@ -1444,8 +1444,9 @@ GameObject:
   - component: {fileID: 1142735215}
   - component: {fileID: 1142735214}
   - component: {fileID: 1142735213}
+  - component: {fileID: 1142735216}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1514,7 +1515,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1142735214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1353941532}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1142735214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,6 +1566,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142735211}
   m_CullTransparentMesh: 1
+--- !u!114 &1142735216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142735211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4a1cd2c38c74c2eb0918a1341efde7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIHoverEffect
 --- !u!1 &1228694303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,6 +2180,7 @@ GameObject:
   - component: {fileID: 1490611238}
   - component: {fileID: 1490611237}
   - component: {fileID: 1490611236}
+  - component: {fileID: 1490611239}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -2264,6 +2290,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490611234}
   m_CullTransparentMesh: 1
+--- !u!114 &1490611239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490611234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4a1cd2c38c74c2eb0918a1341efde7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIHoverEffect
 --- !u!1 &1505419011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2388,7 @@ GameObject:
   - component: {fileID: 1505658565}
   - component: {fileID: 1505658564}
   - component: {fileID: 1505658563}
+  - component: {fileID: 1505658566}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2459,6 +2498,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505658561}
   m_CullTransparentMesh: 1
+--- !u!114 &1505658566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505658561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4a1cd2c38c74c2eb0918a1341efde7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIHoverEffect
 --- !u!1 &1538957250
 GameObject:
   m_ObjectHideFlags: 0
