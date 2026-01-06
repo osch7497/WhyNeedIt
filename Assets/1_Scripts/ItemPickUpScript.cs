@@ -18,9 +18,9 @@ public class ItemPickUpScript : MonoBehaviour
     {
         Inventory = new GameObject[4];
         Inputs = new CustomInputs();
-        Inputs.Player.Interactive.performed += ctx => OnInteractive();
-        Inputs.Player.ThrowOut.performed += ctx => OnThrowOut();
-        Inputs.Player.Inventory.performed += ctx =>{
+        Inputs.Player.Interactive.performed += ctx => OnInteractive();//템 먹는 함수 E키랑 연결
+        Inputs.Player.ThrowOut.performed += ctx => OnThrowOut();//템 버리는 함수 Q키랑 연결
+        Inputs.Player.Inventory.performed += ctx =>{//익명함수랑 연결해서 인벤토리 번호 변경시 inventorymanager한테 선택된 번호 넘기기.
             int equipItemNumber = (int)ctx.ReadValue<float>();
             inventoryManager.SelectInventoryChanged(equipItemNumber-1);
         };
@@ -47,11 +47,11 @@ public class ItemPickUpScript : MonoBehaviour
     }
     void Update()
     {   
-        Debug.DrawRay(transform.position,transform.forward * 3f,Color.red);
-        if(Physics.Raycast(transform.position,transform.forward,out hit,3f,PM))
+        Debug.DrawRay(transform.position,transform.forward * 3f,Color.red);//디버그용 빨간 레이저 쏘기
+        if(Physics.Raycast(transform.position,transform.forward,out hit,3f,PM))//레이캐스팅
         {
-            Debug.Log($"닿은 아이템 이름 {hit.collider.name}");
-            if(hit.collider != BeforeDetect && BeforeDetect != null){
+            Debug.Log($"닿은 아이템 이름 {hit.collider.name}");//닿은 아이템 이름 로그에 남기기
+            if(hit.collider != BeforeDetect && BeforeDetect != null){//콜라이더가 바뀌면(다른 아이템을 가리켰으면)
                 OffGuide();
             }
             hit.collider.GetComponent<Outline>().enabled = true;
@@ -59,14 +59,14 @@ public class ItemPickUpScript : MonoBehaviour
             BeforeDetect = hit.collider;
         }
         else if(BeforeDetect != null){OffGuide();}
-        if(inventoryManager.GetHand() != null){
-            inventoryManager.GetHand().transform.position = ItemDisplay.transform.position;
-            inventoryManager.GetHand().transform.rotation = transform.rotation;
+        if(inventoryManager.GetHand() != null){//만일 손에 들 아이템이 있다면
+            inventoryManager.GetHand().transform.position = ItemDisplay.transform.position;//손 위치로 아이템 이동
+            inventoryManager.GetHand().transform.rotation = transform.rotation;//방향 카메라와 동일하게 고정시킴
         }
     }
-    void OffGuide()
+    void OffGuide()//UI 종료 메서드
     {
-        BeforeDetect.GetComponent<Outline>().enabled = false;
-        BeforeDetect.transform.GetChild(BeforeDetect.transform.childCount-1).gameObject.SetActive(false);
+        BeforeDetect.GetComponent<Outline>().enabled = false;//아웃라인 끄기
+        BeforeDetect.transform.GetChild(BeforeDetect.transform.childCount-1).gameObject.SetActive(false);//가이드 ui 끄기
     }
 }
