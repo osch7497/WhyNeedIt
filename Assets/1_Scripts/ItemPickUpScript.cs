@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 
 public class ItemPickUpScript : MonoBehaviour
@@ -11,36 +12,35 @@ public class ItemPickUpScript : MonoBehaviour
     private GameObject[] Inventory;
     private CustomInputs Inputs;
     private RaycastHit hit;
-    private int equipItemNumber;
     
     void Awake()
     {
-        equipItemNumber = 0;
         Inventory = new GameObject[4];
         Inputs = new CustomInputs();
         Inputs.Player.Interactive.performed += ctx => OnInteractive();
         Inputs.Player.ThrowOut.performed += ctx => OnThrowOut();
+        Inputs.Player.Inventory.performed += ctx =>{
+            int equipItemNumber = (int)ctx.ReadValue<float>();
+            inventoryManager.SelectInventoryChanged(equipItemNumber-1);
+        };
     }
     void OnEnable() => Inputs.Enable();
     void OnDisable() => Inputs.Disable();
-    void OnInteractive()
-    {
+    void OnInteractive(){//E눌러서 템먹는 함수
         Debug.Log("try Interactive");
         if(hit.collider != null){
-            OnThrowOut();
-            hit.collider.gameObject.SetActive(false);
-            ItemDisplay.mesh = hit.collider.GetComponent<MeshFilter>().mesh;
-            inventoryManager.InsertItem(equipItemNumber,hit.collider.gameObject);
+            OnThrowOut();//아템 버리기
+            hit.collider.gameObject.SetActive(false);//inv 매니저에서 이미 있는 아이템 가져오기
+            inventoryManager.InsertItem(hit.collider.gameObject);//아이템 인벤토리에 넣기
         }
         return;
     }
-    void OnThrowOut()
+    void OnThrowOut()//Q 눌러서 템 버리는 함수
     {
-        GameObject Item = inventoryManager.ThrowOutItem(equipItemNumber);
+        GameObject Item = inventoryManager.ThrowOutItem();//inv 매니저에서 이미 있는 아이템 가져오기
         if(Item != null){
             Item.transform.position = transform.position + transform.forward*1.5f;
             Item.transform.rotation = Quaternion.Euler(0,0,0);
-            ItemDisplay.mesh = null;
             Item.SetActive(true);
         }
     }
@@ -58,6 +58,7 @@ public class ItemPickUpScript : MonoBehaviour
             BeforeDetect = hit.collider;
         }
         else if(BeforeDetect != null){OffGuide();}
+        ItemDisplay.mesh = inventoryManager.getItemMesh();
     }
     void OffGuide()
     {

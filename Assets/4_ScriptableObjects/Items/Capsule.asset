@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5757f82e641e74776baeb368988a34cc, type: 3}
   m_Name: Capsule
   m_EditorClassIdentifier: Assembly-CSharp::Items
-  itemName: Capsule
+  itemName: "\uCEA1\uC290"
   itemImage: {fileID: 21300000, guid: ee056047980c44a1fa17f901fab10a82, type: 3}

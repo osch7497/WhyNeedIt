@@ -1,42 +1,64 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
     private GameObject[] Inventory;
-    private Transform[] ItemIcons;
+    private Image[] ItemIcons;
+    private RectTransform[] ItemIconBG;
     private TextMeshProUGUI[] ItemNames;
+    private int SIN;
     void Awake()
     {
         Inventory = new GameObject[4];
-        ItemIcons = new Transform[4];
+        ItemIconBG = new RectTransform[4];
+        ItemIcons = new Image[4];
         ItemNames = new TextMeshProUGUI[4];
-        for(int i = 0; i < 4; i++)
-        {
-            ItemIcons[i] = transform.GetChild(i);
-            ItemNames[i] = ItemIcons[i].GetComponentInChildren<TextMeshProUGUI>();
+        SIN = 0;
+        for(int i = 0; i < 4; i++){
+            ItemIconBG[i] = transform.GetChild(i).GetComponentInChildren<RectTransform>();
+            ItemIcons[i] = transform.GetChild(i).GetChild(0).GetComponentInChildren<Image>();
+            ItemNames[i] = ItemIconBG[i].GetComponentInChildren<TextMeshProUGUI>();
         }
+        ItemIconBG[0].localScale = new Vector3(1.2f,1.2f,1.2f);
     }
-    void Update()
-    {
+    void Update(){
+        
     }
-    public void InsertItem(int index, GameObject Item)
-    {
-        ItemNames[index].text = Item.name;
-        Inventory[index] = Item;
+    public void InsertItem(GameObject Item){
+        Debug.Log($"insertItemIndex:{SIN}");
+        Item item = Item.GetComponent<ItemScript>().Item;
+        ItemNames[SIN].text = item.itemName;
+        ItemIcons[SIN].sprite = item.itemImage;
+        Inventory[SIN] = Item;
     }
-    public GameObject ThrowOutItem(int index)
-    {
-        if(Inventory[index] != null){
-            GameObject ReturnValue = Inventory[index];
-            Inventory[index] = null;
-            ItemNames[index].text = "";
+    public GameObject GetInventory(){
+        return Inventory[SIN];
+    }
+    public GameObject ThrowOutItem(){
+        ItemIcons[SIN].sprite = null;
+        if(Inventory[SIN] != null){
+            GameObject ReturnValue = Inventory[SIN];
+            Inventory[SIN] = null;
+            ItemNames[SIN].text = "";
             return ReturnValue;
         }
         else{
             return null;
         }
+    }
+    public Mesh getItemMesh()
+    {
+        if(Inventory[SIN] == null){return null;}
+        return Inventory[SIN].GetComponent<MeshFilter>().mesh;
+    }
+    public void SelectInventoryChanged(int index)
+    {
+        ItemIconBG[SIN].localScale = new Vector3(1f,1f,1f);
+        SIN = index;
+        ItemIconBG[index].localScale = new Vector3(1.2f,1.2f,1.2f);
     }
 }
