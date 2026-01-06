@@ -2,7 +2,7 @@ using UnityEngine;
 using DG.Tweening;
 
 public class DoorOpen : MonoBehaviour
-{
+{ 
     public Transform playerCamera;
     public Animator FrontDoorAnimator;
     public Animator BackDoorAnimator;
@@ -35,6 +35,7 @@ public class DoorOpen : MonoBehaviour
     void FrontDoorOpening(GameObject door)
     {
         FrontDoorAnimator.SetBool("isOpen", true);
+        GetComponent<FrontDoorInfo>().isOpen = true;
     }
 
     void BackDoorOpening(GameObject door)
