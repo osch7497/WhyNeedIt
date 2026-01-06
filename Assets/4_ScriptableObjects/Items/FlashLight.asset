@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5757f82e641e74776baeb368988a34cc, type: 3}
   m_Name: FlashLight
   m_EditorClassIdentifier: Assembly-CSharp::Items
-  itemName: FlashLight
-  itemImage: {fileID: 21300000, guid: 6c28b4bc873704225b90990725edd5bf, type: 3}
+  itemName: "\uC190\uC804\uB4F1"
+  itemImage: {fileID: 21300000, guid: dc54acd73c84042768634cfd9786b9c9, type: 3}
   rotationOffset: {x: 0, y: 85, z: 88.5}

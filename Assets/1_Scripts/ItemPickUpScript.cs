@@ -61,7 +61,7 @@ public class ItemPickUpScript : MonoBehaviour
         else if(BeforeDetect != null){OffGuide();}
         GameObject HandleItem = inventoryManager.GetHand();
         if(HandleItem != null){//만일 손에 들 아이템이 있다면
-            Debug.Log($"rotation = {transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation}");
+            //Debug.Log($"rotation = {transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation}"); //for debugging rotation
             HandleItem.transform.position = ItemDisplay.transform.position;//손 위치로 아이템 이동
             HandleItem.transform.rotation = transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation;//방향 카메라와 동일하게 고정시킴
         }

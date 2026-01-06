@@ -6,10 +6,22 @@ public class DoorInteractScript : MonoBehaviour
     public LayerMask PM;
     public Collider BeforeDetect;
     RaycastHit hit;
-    void Start()
+    CustomInputs inputs;
+    void Awake()
     {
+        inputs = new CustomInputs();
+        inputs.Player.Interactive.performed += ctx => OnInteract();
     }
+    void OnEnable() => inputs.Enable();
+    void OnDisable() => inputs.Disable();
 
+    void OnInteract(){
+        Debug.Log("Try Interactive");
+        if(hit.collider != null){
+            Animator doorSystem = hit.collider.GetComponent<Animator>();
+            doorSystem.SetBool("isOpen",!doorSystem.GetBool("isOpen"));
+        }
+    }
     // Update is called once per frame
     void Update()
     {
