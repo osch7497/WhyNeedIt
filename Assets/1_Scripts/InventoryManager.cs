@@ -33,6 +33,7 @@ public class InventoryManager : MonoBehaviour
     public void InsertItem(GameObject Item){//인벤에 아이템 넣기 메서트
         Debug.Log($"insertItemIndex:{SIN}");//넣은 아이템 번호 로그에 넣기
         Item item = Item.GetComponent<ItemScript>().Item;//ScriptableObject가져오기
+        ItemIcons[SIN].enabled = true;
         ItemNames[SIN].text = item.itemName;    //이름
         ItemIcons[SIN].sprite = item.itemImage; //이미지
         Inventory[SIN] = Item;                  //오브젝트
@@ -43,6 +44,7 @@ public class InventoryManager : MonoBehaviour
     }
     public GameObject ThrowOutItem(){
         ItemIcons[SIN].sprite = null;//인벤토리 스프라이트를 비움
+        ItemIcons[SIN].enabled = false;
         if(Inventory[SIN] != null){
             GameObject ReturnValue = Inventory[SIN];//현재 사용중(이었던)아이템 미리 저장
             Inventory[SIN] = null;//인벤토리 비움

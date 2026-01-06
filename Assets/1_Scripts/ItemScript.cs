@@ -14,4 +14,11 @@ public class ItemScript : MonoBehaviour
         GuideText.text = $"{Item.itemName} 줍기";
         Debug.Log($"변경된 내용:{GuideText.text}");
     }
+    void Update()
+    {
+        if(transform.position.y < -100)
+        {
+            transform.position = GameObject.FindWithTag("Player").transform.position;
+        }
+    }
 }
