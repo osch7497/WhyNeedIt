@@ -35,7 +35,7 @@ public class DoorOpen : MonoBehaviour
     void FrontDoorOpening(GameObject door)
     {
         FrontDoorAnimator.SetBool("isOpen", true);
-        GetComponent<FrontDoorInfo>().isOpen = true;
+        door.GetComponent<FrontDoorInfo>().isOpen = true;
     }
 
     void BackDoorOpening(GameObject door)
