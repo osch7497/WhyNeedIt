@@ -34,8 +34,9 @@ public class InventoryManager : MonoBehaviour
         ItemNames[SIN].text = item.itemName;
         ItemIcons[SIN].sprite = item.itemImage;
         Inventory[SIN] = Item;
+        Inventory[SIN].SetActive(true);
     }
-    public GameObject GetInventory(){
+    public GameObject GetHand(){
         return Inventory[SIN];
     }
     public GameObject ThrowOutItem(){
@@ -58,7 +59,11 @@ public class InventoryManager : MonoBehaviour
     public void SelectInventoryChanged(int index)
     {
         ItemIconBG[SIN].localScale = new Vector3(1f,1f,1f);
+        if(Inventory[SIN] != null)
+            Inventory[SIN].SetActive(false);
         SIN = index;
+        if(Inventory[SIN] != null)
+            Inventory[SIN].SetActive(true);
         ItemIconBG[index].localScale = new Vector3(1.2f,1.2f,1.2f);
     }
 }

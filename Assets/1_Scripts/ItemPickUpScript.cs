@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
@@ -6,7 +7,7 @@ using UnityEngine.InputSystem;
 public class ItemPickUpScript : MonoBehaviour
 {
     public LayerMask PM;
-    public MeshFilter ItemDisplay;
+    public GameObject ItemDisplay;
     public InventoryManager inventoryManager;
     private Collider BeforeDetect;
     private GameObject[] Inventory;
@@ -39,7 +40,7 @@ public class ItemPickUpScript : MonoBehaviour
     {
         GameObject Item = inventoryManager.ThrowOutItem();//inv 매니저에서 이미 있는 아이템 가져오기
         if(Item != null){
-            Item.transform.position = transform.position + transform.forward*1.5f;
+            Item.transform.position = transform.position + transform.forward*0.5f;
             Item.transform.rotation = Quaternion.Euler(0,0,0);
             Item.SetActive(true);
         }
@@ -54,15 +55,18 @@ public class ItemPickUpScript : MonoBehaviour
                 OffGuide();
             }
             hit.collider.GetComponent<Outline>().enabled = true;
-            hit.collider.transform.GetChild(0).gameObject.SetActive(true);
+            hit.collider.transform.GetChild(hit.collider.transform.childCount-1).gameObject.SetActive(true);
             BeforeDetect = hit.collider;
         }
         else if(BeforeDetect != null){OffGuide();}
-        ItemDisplay.mesh = inventoryManager.getItemMesh();
+        if(inventoryManager.GetHand() != null){
+            inventoryManager.GetHand().transform.position = ItemDisplay.transform.position;
+            inventoryManager.GetHand().transform.rotation = transform.rotation;
+        }
     }
     void OffGuide()
     {
         BeforeDetect.GetComponent<Outline>().enabled = false;
-        BeforeDetect.transform.GetChild(0).gameObject.SetActive(false);
+        BeforeDetect.transform.GetChild(BeforeDetect.transform.childCount-1).gameObject.SetActive(false);
     }
 }
