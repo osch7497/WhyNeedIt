@@ -14963,6 +14963,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381334912}
   m_Mesh: {fileID: 4300014, guid: 91341d12d38c15842996bbb24d6b8f29, type: 3}
+--- !u!1 &382061994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1707064676450180, guid: 5512c233fd8b9ac49b4f5bfef170b92b, type: 3}
+  m_PrefabInstance: {fileID: 193976777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &382061998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382061994}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.4999957, y: 1.099999, z: 0.63999945}
+  m_Center: {x: 0, y: 0.5499995, z: 0.31999967}
 --- !u!1 &385800290
 GameObject:
   m_ObjectHideFlags: 0
