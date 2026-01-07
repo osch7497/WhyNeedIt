@@ -31696,7 +31696,7 @@ ReflectionProbe:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 1
+  m_IntensityMultiplier: 0.2
   m_BlendDistance: 1
   m_HDR: 1
   m_BoxProjection: 1
@@ -63269,7 +63269,7 @@ ReflectionProbe:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 1
+  m_IntensityMultiplier: 0.2
   m_BlendDistance: 1
   m_HDR: 1
   m_BoxProjection: 1
@@ -74299,9 +74299,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23579223908900470, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23579223908900470, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb33c93b5cc865247a578583456f5ac8, type: 2}
+    - target: {fileID: 23579223908900470, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7bc7e23469c8cb64284d312068355671, type: 2}
+    - target: {fileID: 23813630577943318, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23813630577943318, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7bc7e23469c8cb64284d312068355671, type: 2}
+    - target: {fileID: 23858623522390554, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23858623522390554, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb33c93b5cc865247a578583456f5ac8, type: 2}
     - target: {fileID: 23858623522390554, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -76047,7 +76071,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0
   sharedProfile: {fileID: 11400000, guid: 8e8779637c4eb4e22a438111af3d2bf7, type: 2}
 --- !u!4 &2133600213
 Transform:
