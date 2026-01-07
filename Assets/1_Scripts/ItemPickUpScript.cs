@@ -36,7 +36,6 @@ public class ItemPickUpScript : MonoBehaviour
             OnThrowOut();//아템 버리기
             hit.collider.gameObject.SetActive(false);//inv 매니저에서 이미 있는 아이템 가져오기
             inventoryManager.InsertItem(hit.collider.gameObject);//아이템 인벤토리에 넣기
-            AimPointScript.Item = true;
         }
         return;
     }
@@ -61,6 +60,7 @@ public class ItemPickUpScript : MonoBehaviour
             hit.collider.GetComponent<Outline>().enabled = true;
             hit.collider.transform.GetChild(hit.collider.transform.childCount-1).gameObject.SetActive(true);
             BeforeDetect = hit.collider;
+            AimPointScript.Item = true;
         }
         else if(BeforeDetect != null){
             OffGuide();

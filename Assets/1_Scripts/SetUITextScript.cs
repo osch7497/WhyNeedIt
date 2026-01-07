@@ -13,7 +13,6 @@ public class SetUITextScript : MonoBehaviour
     }
     void Update() {
         Transform target = GameObject.FindWithTag("MainCamera").transform; 
-        Quaternion rot;
         
         transform.rotation = Player.transform.rotation;    
         transform.Rotate(0f,180f,0f);
