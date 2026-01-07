@@ -98,7 +98,11 @@ public class Outline : MonoBehaviour {
     // Apply material properties immediately
     needsUpdate = true;
   }
-
+  public void RefreshRenderer(){
+    renderers = GetComponentsInChildren<Renderer>();
+    LoadSmoothNormals();
+    needsUpdate = true;
+  }
   void OnEnable() {
     foreach (var renderer in renderers) {
 
@@ -157,7 +161,7 @@ public class Outline : MonoBehaviour {
     Destroy(outlineFillMaterial);
   }
 
-  void Bake() {
+  public void Bake() {
 
     // Generate smooth normals for each mesh
     var bakedMeshes = new HashSet<Mesh>();

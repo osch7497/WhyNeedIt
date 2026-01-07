@@ -5,9 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Item
-  - FrontDoor
-  - BackDoor
   - Light
+  - PadLock
+  - LockedDoor
+  - Door
   layers:
   - Default
   - TransparentFX
