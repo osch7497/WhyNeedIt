@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 33235048655974532}
   - component: {fileID: 23528741209343222}
   - component: {fileID: 6154141061097155927}
+  - component: {fileID: 3662306248096865508}
   m_Layer: 0
   m_Name: board01
   m_TagString: Untagged
@@ -775,6 +776,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9000005, y: 1.42, z: 0.04000001}
   m_Center: {x: 0, y: 0.71, z: 0.020000005}
+--- !u!65 &3662306248096865508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367496683992924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9000005, y: 1.42, z: 0.04000001}
+  m_Center: {x: 0, y: 0.71, z: 0.019984746}
 --- !u!1 &1374017271506994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1298,7 @@ GameObject:
   - component: {fileID: 4425370771028386}
   - component: {fileID: 33412214412860580}
   - component: {fileID: 23269409658820306}
+  - component: {fileID: 6024391060276268551}
   m_Layer: 0
   m_Name: stairs_mid
   m_TagString: Untagged
@@ -1358,6 +1381,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6024391060276268551
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622217577283084}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 31540beebfce3c7419752b7b8d821435, type: 3}
 --- !u!1 &1685042655129278
 GameObject:
   m_ObjectHideFlags: 0
