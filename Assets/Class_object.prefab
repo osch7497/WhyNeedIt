@@ -1,0 +1,2636 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4995425634682833497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2772633740666391249}
+  m_Layer: 0
+  m_Name: Class_object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2772633740666391249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4995425634682833497}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.383501, y: 0.37499994, z: -24.513315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1930838069075142740}
+  - {fileID: 4490033429136883557}
+  - {fileID: 7735458160568256828}
+  - {fileID: 1177270857473739088}
+  - {fileID: 1012569262252117382}
+  - {fileID: 2044226626932329192}
+  - {fileID: 2093093989278637069}
+  - {fileID: 255989268638922946}
+  - {fileID: 8688418621565483819}
+  - {fileID: 4407382503949400373}
+  - {fileID: 8200482215585643618}
+  - {fileID: 4708861654748816197}
+  - {fileID: 5047619869784488059}
+  - {fileID: 1199566282227832068}
+  - {fileID: 1175000243125786463}
+  - {fileID: 8072571562292674642}
+  - {fileID: 174115968908304707}
+  - {fileID: 8910131788528991138}
+  - {fileID: 2349553109709626944}
+  - {fileID: 4378715114295426832}
+  - {fileID: 2388000699218416178}
+  - {fileID: 7900192970279632974}
+  - {fileID: 6284945561896352276}
+  - {fileID: 6877096544884793084}
+  - {fileID: 4253260898664648669}
+  - {fileID: 6856976668858565159}
+  - {fileID: 8118691718952607878}
+  - {fileID: 4573723168137468796}
+  - {fileID: 2410022293675917002}
+  - {fileID: 504212911575343059}
+  - {fileID: 2850314134435263868}
+  - {fileID: 6843746655937713002}
+  - {fileID: 1863441215871566344}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &105249126049937464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9819984
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &504212911575343059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 105249126049937464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &290426785134649129
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7179985
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.861
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &255989268638922946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 290426785134649129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &423387775924815528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.9135017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9573708
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &174115968908304707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 423387775924815528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &686771577483242093
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3250046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02831459
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &1012569262252117382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 686771577483242093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1670569727396983535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.157501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02831459
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &1199566282227832068 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 1670569727396983535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1712714775584043188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.473999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &1175000243125786463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 1712714775584043188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1719311722513772219
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8855019
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &1177270857473739088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 1719311722513772219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1911374081870543846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8855019
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9856853
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &2093093989278637069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 1911374081870543846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1930838069074752212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: 100000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_Name
+      value: board01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1554823
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4578308
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2112854
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1364994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.9866848
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+--- !u!4 &1930838069075142740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: e7949648d2b989e408bfba9b078e6e9d, type: 3}
+  m_PrefabInstance: {fileID: 1930838069074752212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2005285132768849155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3250046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9573708
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &2044226626932329192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 2005285132768849155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2186212385166304739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &1863441215871566344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 2186212385166304739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2307216196022604439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43950272
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9573708
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &2850314134435263868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 2307216196022604439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2785855179855050201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.9135017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8326855
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &2388000699218416178 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 2785855179855050201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2808179071222962465
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43950272
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8326855
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &2410022293675917002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 2808179071222962465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2815298868669151659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.473999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9819984
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &2349553109709626944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 2815298868669151659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4103792462100937879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.861
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &4573723168137468796 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 4103792462100937879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4162861936732035214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9856853
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &4490033429136883557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 4162861936732035214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4224537478588112606
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.157501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9536839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &4407382503949400373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 4224537478588112606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4273611821200120059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.9135017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9536839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &4378715114295426832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 4273611821200120059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4362905285573634102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3250046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9536839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &4253260898664648669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 4362905285573634102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4721468931448528784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.157501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9573708
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &5047619869784488059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 4721468931448528784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5103569881974932654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7179985
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9856853
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &4708861654748816197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 5103569881974932654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5814751635578199551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7179985
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &6284945561896352276 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 5814751635578199551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6386779982354032076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3250046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8326855
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &6856976668858565159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 6386779982354032076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6411687306542053655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8855019
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9819984
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &6877096544884793084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 6411687306542053655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6445607846319109249
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43950272
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02831459
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &6843746655937713002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 6445607846319109249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7649828902603532197
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.473999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.861
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &7900192970279632974 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 7649828902603532197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7841724948089155287
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43950272
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9536839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &7735458160568256828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 7841724948089155287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8522866985327827849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7179985
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9819984
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &8200482215585643618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 8522866985327827849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8584382504749631341
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8855019
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.861
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &8118691718952607878 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 8584382504749631341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8614594909973604281
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.9135017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02831459
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &8072571562292674642 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 8614594909973604281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8947980495368674377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.473999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9856853
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efc70441f70854e7486d241adbbd71bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_school_wood_desk_no__0105071500_texture (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+--- !u!4 &8910131788528991138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d61d0f23ad66452285d8af111573daa, type: 3}
+  m_PrefabInstance: {fileID: 8947980495368674377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9158579803068161216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2772633740666391249}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.834373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.157501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13100004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8326855
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5df360a26d756422d81a864a566a32aa, type: 2}
+    - target: {fileID: 919132149155446097, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_SCHOOL_WOOD_Chair_0105065908_texture (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+--- !u!4 &8688418621565483819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e160ba17276a249bf8823bc4cc8067de, type: 3}
+  m_PrefabInstance: {fileID: 9158579803068161216}
+  m_PrefabAsset: {fileID: 0}
