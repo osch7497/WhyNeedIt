@@ -4,7 +4,7 @@ public class DoorInteractScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public LayerMask PM;
-    public Collider BeforeDetect;
+    private Collider BeforeDetect;
     RaycastHit hit;
     CustomInputs inputs;
     void Awake()
@@ -27,6 +27,7 @@ public class DoorInteractScript : MonoBehaviour
     {
         Debug.DrawRay(transform.position,transform.forward * 3f,Color.red);
         if(Physics.Raycast(transform.position,transform.forward,out hit, 3f, PM)){
+            AimPointScript.Door = true;
             Debug.Log($"닿은 아이템 이름 {hit.collider.name}");
             if(hit.collider != BeforeDetect && BeforeDetect != null){
                 OffGuide();
@@ -34,7 +35,10 @@ public class DoorInteractScript : MonoBehaviour
             hit.collider.GetComponent<Outline>().enabled = true;
             BeforeDetect = hit.collider;
         }
-        else if(BeforeDetect != null){OffGuide();}
+        else if(BeforeDetect != null){
+            OffGuide();
+            AimPointScript.Door = false;
+        }
     }
     void OffGuide()
     {

@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.InputSystem;
@@ -13,11 +14,13 @@ public class ItemPickUpScript : MonoBehaviour
     private GameObject[] Inventory;
     private CustomInputs Inputs;
     private RaycastHit hit;
+    private LightingEditor LE;
     
     void Awake()
     {
         Inventory = new GameObject[4];
         Inputs = new CustomInputs();
+        LE = GameObject.FindWithTag("Light").GetComponent<LightingEditor>();
         Inputs.Player.Interactive.performed += ctx => OnInteractive();//템 먹는 함수 E키랑 연결
         Inputs.Player.ThrowOut.performed += ctx => OnThrowOut();//템 버리는 함수 Q키랑 연결
         Inputs.Player.Inventory.performed += ctx =>{//익명함수랑 연결해서 인벤토리 번호 변경시 inventorymanager한테 선택된 번호 넘기기.
@@ -33,6 +36,7 @@ public class ItemPickUpScript : MonoBehaviour
             OnThrowOut();//아템 버리기
             hit.collider.gameObject.SetActive(false);//inv 매니저에서 이미 있는 아이템 가져오기
             inventoryManager.InsertItem(hit.collider.gameObject);//아이템 인벤토리에 넣기
+            AimPointScript.Item = true;
         }
         return;
     }
@@ -58,12 +62,20 @@ public class ItemPickUpScript : MonoBehaviour
             hit.collider.transform.GetChild(hit.collider.transform.childCount-1).gameObject.SetActive(true);
             BeforeDetect = hit.collider;
         }
-        else if(BeforeDetect != null){OffGuide();}
+        else if(BeforeDetect != null){
+            OffGuide();
+            AimPointScript.Item = false;
+        }
         GameObject HandleItem = inventoryManager.GetHand();
         if(HandleItem != null){//만일 손에 들 아이템이 있다면
-            //Debug.Log($"rotation = {transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation}"); //for debugging rotation
+            Item Hitem = HandleItem.GetComponent<ItemScript>().Item;
+            //Debug.Log($"rotation = {transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation}");
             HandleItem.transform.position = ItemDisplay.transform.position;//손 위치로 아이템 이동
-            HandleItem.transform.rotation = transform.rotation * HandleItem.GetComponent<ItemScript>().Item.HandleRotation;//방향 카메라와 동일하게 고정시킴
+            HandleItem.transform.rotation = transform.rotation * Hitem.HandleRotation;//방향 카메라와 동일하게 고정시킴
+            LE.LightingValue = Hitem.LightingValue;
+        }
+        else{
+            LE.LightingValue = 0.9f;
         }
     }
     void OffGuide()//UI 종료 메서드

@@ -7,4 +7,5 @@ public class Item : ScriptableObject
     public Sprite itemImage;
     public Vector3 rotationOffset;
     public Quaternion HandleRotation => Quaternion.Euler(rotationOffset);
+    public float LightingValue = 0.9f;
 }
