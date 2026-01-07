@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 4304713009772949391}
   m_Layer: 7
   m_Name: door02_door1
-  m_TagString: FrontDoor
+  m_TagString: LockedDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1693,12 +1693,13 @@ GameObject:
   - component: {fileID: 23139372048071788}
   - component: {fileID: 4027500912704359108}
   - component: {fileID: 8029210016111620063}
-  m_Layer: 0
+  - component: {fileID: 1735854857811571735}
+  m_Layer: 7
   m_Name: door02_door2
-  m_TagString: Untagged
+  m_TagString: LockedDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4348505260673168
 Transform:
@@ -1814,6 +1815,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.96, y: 1.99, z: 0.04}
   m_Center: {x: -0.53999996, y: 1.005, z: -0.02}
+--- !u!114 &1735854857811571735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626020350628026}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 7
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1660105966343580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,12 +2850,13 @@ GameObject:
   - component: {fileID: 23552834144007274}
   - component: {fileID: 2507430947833911710}
   - component: {fileID: 5005633132681487206}
-  m_Layer: 0
+  - component: {fileID: 416218105053842364}
+  m_Layer: 7
   m_Name: door02_door1
-  m_TagString: Untagged
+  m_TagString: LockedDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4543070636146132
 Transform:
@@ -2952,6 +2972,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.96, y: 1.99, z: 0.04}
   m_Center: {x: 0.53999996, y: 1.005, z: 0.02}
+--- !u!114 &416218105053842364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752311825629430}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 7
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1757571119461014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4382,7 +4420,7 @@ GameObject:
   - component: {fileID: 3013452999647712507}
   m_Layer: 7
   m_Name: door02_door2
-  m_TagString: Untagged
+  m_TagString: LockedDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
