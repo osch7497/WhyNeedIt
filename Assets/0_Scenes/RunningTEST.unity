@@ -235,6 +235,10 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 980266674824206978, guid: e34b2b8a8912a47b8a94dcc522a0e6fd, type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1361300787}
+    - target: {fileID: 980266674824206978, guid: e34b2b8a8912a47b8a94dcc522a0e6fd, type: 3}
       propertyPath: multiplierRunSpeed
       value: 2
       objectReference: {fileID: 0}
