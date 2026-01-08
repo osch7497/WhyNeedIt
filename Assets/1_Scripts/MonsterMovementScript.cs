@@ -23,6 +23,7 @@ public class MonsterMovementScript : MonoBehaviour
     }
     void SetRandomPoint(){
         target = WayPoints[Random.Range(0,WayPoints.Length)];
+        Debug.Log($"Waypoint Setted : {target}");
     }
     IEnumerator MoneterAI(){
         if(target == null)
@@ -38,8 +39,11 @@ public class MonsterMovementScript : MonoBehaviour
                 if(target.CompareTag("Player")){
                     Agent.enabled = false;
                     Anim.SetTrigger("Attack");
-                    yield return new WaitForSeconds(2.3f);
+                    yield return new WaitForSeconds(3.5f);
                 }else{
+                    Anim.SetBool("run",false);
+                    yield return new WaitForSeconds(3.5f);
+                    Anim.SetBool("run",true);
                     SetRandomPoint();
                 }
             }
@@ -51,6 +55,6 @@ public class MonsterMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log($"Agent enabled:{Agent.enabled}");
     }
 }
