@@ -30,6 +30,7 @@ public class MonsterMovementScript : MonoBehaviour
     [SerializeField] private Transform Head; //머리 각도 세팅
 
     float lastseenplayer;
+    IEnumerator co;
     void Awake()
     {
         Anim = GetComponent<Animator>();
@@ -38,7 +39,7 @@ public class MonsterMovementScript : MonoBehaviour
         for(int i = 1; i <= WayPointGroup.childCount; i++){
             WayPoints[i-1] = WayPointGroup.GetChild(i-1);
         }
-        IEnumerator co = MoneterAI();
+        co = MoneterAI();
         StartCoroutine(co);
         lastseenplayer = Time.time - 5f;
         IEnumerator co2 = GetSight();
@@ -64,8 +65,26 @@ public class MonsterMovementScript : MonoBehaviour
                         lastseenplayer = Time.time;
                         target = Hitinfo.collider.transform;
                         Debug.Log("I SAW PLAYER!!");
-                        StopCoroutine(MoneterAI());
-                        StartCoroutine(MoneterAI());
+                        StopCoroutine(co);
+                        StartCoroutine(co);
+                    }
+                    else if ((Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 2.5f){
+                        Debug.Log("I NEED TO DESTORY DOOR");
+                        Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.cyan,refreshRate);
+                        StopCoroutine(co);
+                        Agent.speed = 0;
+                        Anim.SetBool("run",false);
+                        Anim.SetTrigger("Attack");
+                        yield return new WaitForSeconds(0.5f);
+                        Hitinfo.collider.tag = "Untagged";
+                        Hitinfo.collider.GetComponent<Rigidbody>().isKinematic = false;
+                        if(Hitinfo.collider.GetComponent<Animator>())
+                            Hitinfo.collider.GetComponent<Animator>().enabled = false;
+                        Hitinfo.collider.GetComponent<Rigidbody>().AddForce(Hitinfo.collider.transform.position - transform.position);
+                        Destroy(Hitinfo.collider,3.5f);
+                        yield return new WaitForSeconds(2.5f);
+                        StartCoroutine(co);
+                        
                     }
                     else{
                         Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.yellow,refreshRate);
@@ -87,15 +106,7 @@ public class MonsterMovementScript : MonoBehaviour
             Agent.SetDestination(target.position);
             if(Vector3.Distance(transform.position,target.position) > 1.5f){
                     Agent.speed = 5;
-                Anim.SetBool("run",true);
-                if (Agent.isOnOffMeshLink){
-                    if(Agent.currentOffMeshLinkData.owner.GetComponent<BoxCollider>().enabled){
-                    Agent.speed = 0;
-                    Agent.navMeshOwner.GetComponent<BoxCollider>().enabled = false;
-                    Anim.SetTrigger("Attack");
-                    yield return new WaitForSeconds(2f);
-                    }
-                }
+                    Anim.SetBool("run",true);
             }
             else{
                 Anim.SetBool("run",false);
