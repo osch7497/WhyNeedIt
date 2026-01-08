@@ -3,18 +3,30 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System;
 using System.Collections;
+using UnityEngine.Serialization;
 
 public class FpsController : MonoBehaviour
 {
+    [Header("Movement")]
     public float moveSpeed = 3f;
     public float multiplierRunSpeed = 1.5f;
     public float lookSpeed = 15f;
     public float maxRunningTime = 10f;
     public float maxFloatingTime = 13f;
     public Image staminaBar;
-
-    public Transform playerCamera;
+    
+    [Header("Camera")]
+    public Camera playerCamera;
     private Vector3 cameraOriginPos;
+    
+    [FormerlySerializedAs("waveMultipler")] [Range(0,2.0f)][SerializeField]
+    private float waveForce;
+    [FormerlySerializedAs("waveMultiplier")] [Range(0, 2.0f)] [SerializeField]
+    private float waveSpeed;
+    [Range(30f,180.0f)] [SerializeField]
+    private float DefaultFov;
+    [FormerlySerializedAs("waveMultiplier")] [Range(30f,180.0f)] [SerializeField]
+    private float RunFov;
 
     private Vector2 moveInput;
     private Vector2 lookInput;
@@ -43,7 +55,7 @@ public class FpsController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        cameraOriginPos = playerCamera.localPosition;
+        cameraOriginPos = playerCamera.transform.localPosition;
         currentStamina = 100f;
         
         emptyColor = new Color(34 / 255f, 34 / 255f, 34 / 255f);
@@ -59,7 +71,7 @@ public class FpsController : MonoBehaviour
         moveInput = playerInput.Player.Move.ReadValue<Vector2>();
 
         // 방향 구하기
-        Vector3 moveDir = playerCamera.forward * moveInput.y + playerCamera.right * moveInput.x;
+        Vector3 moveDir = playerCamera.transform.forward * moveInput.y + playerCamera.transform.right * moveInput.x;
         moveDir.y = 0f;
 
         // 속도 부여
@@ -99,6 +111,7 @@ public class FpsController : MonoBehaviour
         // 달리는 도중이라면
         if (isRunning)
         {
+            playerCamera.fieldOfView = RunFov;
             velocity.x *= multiplierRunSpeed;
             velocity.z *= multiplierRunSpeed;
 
@@ -123,6 +136,7 @@ public class FpsController : MonoBehaviour
 
         else
         {
+            playerCamera.fieldOfView = DefaultFov;
             if (currentStamina < 100f) currentStamina += (100f / maxFloatingTime) * Time.deltaTime;
         }
 
@@ -141,15 +155,15 @@ public class FpsController : MonoBehaviour
 
         if (playerCamera != null)
         {
-            playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         }
 
 
         // 머리 흔들림
         if (moveInput != Vector2.zero)
         {
-            sinWaving += Time.deltaTime * ((isRunning && currentStamina > 0.1f) ? 14f : 9f);
-            float yOffset = Mathf.Sin(sinWaving) * ((isRunning && currentStamina > 0.1f) ? 0.13f : 0.07f);
+            sinWaving += Time.deltaTime * ((isRunning && currentStamina > 0.1f) ? 14f : 9f) * waveSpeed;
+            float yOffset = Mathf.Sin(sinWaving) * ((isRunning && currentStamina > 0.1f) ? 0.10f : 0.05f) * waveForce;
 
             playerCamera.transform.localPosition =
                 cameraOriginPos + new Vector3(0f, yOffset, 0f);
