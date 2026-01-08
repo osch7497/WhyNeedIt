@@ -100,12 +100,12 @@ GameObject:
   - component: {fileID: 4390166496431806}
   - component: {fileID: 33474360922166246}
   - component: {fileID: 23796137178571196}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sign03_floor-level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4390166496431806
 Transform:
@@ -586,12 +586,12 @@ GameObject:
   - component: {fileID: 4077843585912964}
   - component: {fileID: 33439235163703978}
   - component: {fileID: 23235535102160446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sign03_floor-level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4077843585912964
 Transform:
@@ -940,12 +940,12 @@ GameObject:
   - component: {fileID: 4821779234940592}
   - component: {fileID: 33866348992306234}
   - component: {fileID: 23387943519741192}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sign03_floor-level3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4821779234940592
 Transform:
@@ -1298,8 +1298,7 @@ GameObject:
   - component: {fileID: 4425370771028386}
   - component: {fileID: 33412214412860580}
   - component: {fileID: 23269409658820306}
-  - component: {fileID: 6024391060276268551}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stairs_mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1317,12 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1942104685384084700}
+  - {fileID: 5800914111887215425}
+  - {fileID: 7834782570091119798}
+  - {fileID: 7290068618838153293}
+  - {fileID: 1413688553823555894}
   m_Father: {fileID: 4509486716769584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33412214412860580
@@ -1381,28 +1385,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6024391060276268551
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622217577283084}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 31540beebfce3c7419752b7b8d821435, type: 3}
 --- !u!1 &1685042655129278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,12 +1664,13 @@ GameObject:
   - component: {fileID: 4035362508452192}
   - component: {fileID: 33912200136880528}
   - component: {fileID: 23974527704966416}
-  m_Layer: 0
+  - component: {fileID: 7712939075968661097}
+  m_Layer: 9
   m_Name: floor_stairs_mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4035362508452192
 Transform:
@@ -1760,3 +1743,289 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7712939075968661097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941807295996278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.5, y: 0, z: 2.92}
+  m_Center: {x: 0, y: 4, z: 2.96}
+--- !u!1 &35093895900695940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413688553823555894}
+  - component: {fileID: 883902533311197834}
+  m_Layer: 9
+  m_Name: StairCollider (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413688553823555894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35093895900695940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.28819624, y: -0, z: -0, w: 0.9575714}
+  m_LocalPosition: {x: 1.199997, y: 3.8509998, z: 5.0909996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4425370771028386}
+  m_LocalEulerAnglesHint: {x: 33.5, y: 0, z: 0}
+--- !u!65 &883902533311197834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35093895900695940}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.21502686, y: 1.0256647, z: 3.9804957}
+  m_Center: {x: -1.2267532, y: 0.012827043, z: 0.55337703}
+--- !u!1 &85385839442170690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5800914111887215425}
+  - component: {fileID: 616294018875867381}
+  m_Layer: 9
+  m_Name: StairCollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5800914111887215425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85385839442170690}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.63, y: 2.458, z: 8.616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4425370771028386}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &616294018875867381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85385839442170690}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.5412455, y: 0.04313469, z: 2.956913}
+  m_Center: {x: 1.6304393, y: -0.47843707, z: -0.27193642}
+--- !u!1 &790672224790391918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7290068618838153293}
+  - component: {fileID: 894009795950440851}
+  m_Layer: 9
+  m_Name: StairCollider (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7290068618838153293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790672224790391918}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.28819624, y: -0, z: -0, w: 0.9575714}
+  m_LocalPosition: {x: 1.199997, y: 1.06, z: 5.0909996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4425370771028386}
+  m_LocalEulerAnglesHint: {x: -33.5, y: 0, z: 0}
+--- !u!65 &894009795950440851
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790672224790391918}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.21502686, y: 1.0256647, z: 3.9804957}
+  m_Center: {x: -1.2267532, y: 0.012827043, z: 0.55337703}
+--- !u!1 &5762895128313380011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7834782570091119798}
+  - component: {fileID: 3321939827436486688}
+  m_Layer: 9
+  m_Name: StairCollider (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7834782570091119798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762895128313380011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.28819624, y: -0, z: -0, w: 0.9575714}
+  m_LocalPosition: {x: -1.6060028, y: 3.441, z: 6.0369987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4425370771028386}
+  m_LocalEulerAnglesHint: {x: 33.5, y: 0, z: 0}
+--- !u!65 &3321939827436486688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762895128313380011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.706206, y: 0.04313469, z: 3.562355}
+  m_Center: {x: 0.21291947, y: -0.47843707, z: 0.08977091}
+--- !u!1 &5905219339807545933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942104685384084700}
+  - component: {fileID: 4441456759289454639}
+  m_Layer: 9
+  m_Name: StairCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942104685384084700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905219339807545933}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.28819624, y: -0, z: -0, w: 0.9575714}
+  m_LocalPosition: {x: 1.199997, y: 1.294, z: 5.0909996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4425370771028386}
+  m_LocalEulerAnglesHint: {x: -33.5, y: 0, z: 0}
+--- !u!65 &4441456759289454639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905219339807545933}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.706206, y: 0.04313469, z: 3.562355}
+  m_Center: {x: 0.21291947, y: -0.47843707, z: 0.08977091}
