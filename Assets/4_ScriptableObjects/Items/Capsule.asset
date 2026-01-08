@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Items
   itemName: Capsule
   itemImage: {fileID: 21300000, guid: ee056047980c44a1fa17f901fab10a82, type: 3}
+  rotationOffset: {x: 0, y: 0, z: 0}
+  LightingValue: 0.85

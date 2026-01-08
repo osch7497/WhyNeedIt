@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemName: "2\uCE35 \uC5F4\uC1E0"
   itemImage: {fileID: 21300000, guid: 74f23be4d34864bf0a49f179e4f6c95c, type: 3}
+  rotationOffset: {x: 0, y: 0, z: 0}
+  LightingValue: 0.85

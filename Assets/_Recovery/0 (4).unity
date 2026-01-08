@@ -26376,7 +26376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 0b1eb3ad467654f6eb08a4616345fb8b, type: 3}
       propertyPath: angle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 0b1eb3ad467654f6eb08a4616345fb8b, type: 3}
       propertyPath: target
@@ -26384,7 +26384,7 @@ PrefabInstance:
       objectReference: {fileID: 713545445}
     - target: {fileID: 6325892811339499151, guid: 0b1eb3ad467654f6eb08a4616345fb8b, type: 3}
       propertyPath: SightAngle
-      value: 360
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 0b1eb3ad467654f6eb08a4616345fb8b, type: 3}
       propertyPath: SightRange
@@ -26394,10 +26394,6 @@ PrefabInstance:
       propertyPath: WayPointGroup
       value: 
       objectReference: {fileID: 843195676}
-    - target: {fileID: 6325892811339499151, guid: 0b1eb3ad467654f6eb08a4616345fb8b, type: 3}
-      propertyPath: obstacleMask.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
