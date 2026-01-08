@@ -60,16 +60,8 @@ public class MonsterMovementScript : MonoBehaviour
                 Vector3 ShotRad = Quaternion.Euler(0,NSA+Head.eulerAngles.y,0) * Vector3.forward;//raycast 각도
                 Physics.Raycast(ShotPos,Quaternion.Euler(0,NSA+Head.eulerAngles.y,0) * Vector3.forward,out Hitinfo,SightRange,obstacleMask);
                 if(Hitinfo.collider != null){
-                    if (Hitinfo.collider.CompareTag("Player")){
-                        Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.red,refreshRate);
-                        lastseenplayer = Time.time;
-                        target = Hitinfo.collider.transform;
-                        Debug.Log("I SAW PLAYER!!");
-                        StopCoroutine(co);
-                        StartCoroutine(co);
-                    }
-                    else if ((Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 2.5f){
-                        Debug.Log("I NEED TO DESTORY DOOR");
+                    if ( (-SightAngle/4f<NSA)&&(SightAngle/4f>NSA)&&(Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 1.5f){
+                        Debug.Log($"I NEED TO DESTORY {Hitinfo.collider.name}");
                         Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.cyan,refreshRate);
                         StopCoroutine(co);
                         Agent.speed = 0;
@@ -77,14 +69,25 @@ public class MonsterMovementScript : MonoBehaviour
                         Anim.SetTrigger("Attack");
                         yield return new WaitForSeconds(0.5f);
                         Hitinfo.collider.tag = "Untagged";
-                        Hitinfo.collider.GetComponent<Rigidbody>().isKinematic = false;
                         if(Hitinfo.collider.GetComponent<Animator>())
                             Hitinfo.collider.GetComponent<Animator>().enabled = false;
-                        Hitinfo.collider.GetComponent<Rigidbody>().AddForce(Hitinfo.collider.transform.position - transform.position);
-                        Destroy(Hitinfo.collider,3.5f);
+                        if(Hitinfo.collider.GetComponent<Rigidbody>()==null){
+                            Hitinfo.collider.AddComponent<Rigidbody>();
+                        }
+                        Hitinfo.collider.GetComponent<Rigidbody>().isKinematic = false;
+                        Hitinfo.collider.GetComponent<Rigidbody>().AddForce(Hitinfo.collider.transform.position - transform.position * 5f);
+                        Destroy(Hitinfo.collider.gameObject,3.5f);
                         yield return new WaitForSeconds(2.5f);
                         StartCoroutine(co);
                         
+                    }
+                    else if (Hitinfo.collider.CompareTag("Player") && !target.CompareTag("Player")){
+                        Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.red,refreshRate);
+                        lastseenplayer = Time.time;
+                        target = Hitinfo.collider.transform;
+                        Debug.Log("I SAW PLAYER!!");
+                        StopCoroutine(co);
+                        StartCoroutine(co);
                     }
                     else{
                         Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.yellow,refreshRate);
@@ -129,7 +132,7 @@ public class MonsterMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target.CompareTag("Player") && Time.time - lastseenplayer > 5f){
+        if(target.CompareTag("Player") && Time.time - lastseenplayer > 7f){
             Debug.Log("I nEed tO FInD PLAYER!!");
             SetRandomPoint();
         }
