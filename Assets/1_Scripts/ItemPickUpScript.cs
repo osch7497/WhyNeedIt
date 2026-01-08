@@ -44,7 +44,8 @@ public class ItemPickUpScript : MonoBehaviour
     {
         GameObject Item = inventoryManager.ThrowOutItem();//inv 매니저에서 이미 있는 아이템 가져오기
         if(Item != null){
-            Item.transform.position = transform.position + transform.forward*0.5f;
+            Item.transform.position = transform.position;
+            Item.GetComponent<Rigidbody>().AddForce(Item.transform.forward * 1f);
             Item.transform.rotation = Quaternion.Euler(0,0,0);
             Item.SetActive(true);
         }
