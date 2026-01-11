@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorInteractScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public LayerMask PM;
+    public LayerMask PM;//문 감지 마스크임 헷갈리지 마세요.
     private Collider BeforeDetect;
     RaycastHit hit;
     CustomInputs inputs;

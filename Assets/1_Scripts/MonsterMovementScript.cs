@@ -22,12 +22,12 @@ public class MonsterMovementScript : MonoBehaviour
     [SerializeField] private LayerMask obstacleMask;        // 장애물 대상
 
     [Header("Draw Line")]
-    [Range(0.01f, 1f)]
-    [SerializeField] private float angle; //선 1개 1개의 각도.
-    [Range(0.01f, 1f)]
-    [SerializeField] private float refreshRate; //선 1개 1개의 각도.
-    [Header("Head Setting")]
-    [SerializeField] private Transform Head; //머리 각도 세팅
+    [Range(0.01f, 1f)][SerializeField]
+    private float angle; //선 1개 1개의 각도.
+    [Range(0.01f, 1f)][SerializeField]
+    private float refreshRate; //선 1개 1개의 각도.
+    [Header("Head Setting")][SerializeField]
+    private Transform Head; //머리 각도 세팅
 
     float lastseenplayer;
     IEnumerator co;
@@ -60,14 +60,16 @@ public class MonsterMovementScript : MonoBehaviour
                 Vector3 ShotRad = Quaternion.Euler(0,NSA+Head.eulerAngles.y,0) * Vector3.forward;//raycast 각도
                 Physics.Raycast(ShotPos,Quaternion.Euler(0,NSA+Head.eulerAngles.y,0) * Vector3.forward,out Hitinfo,SightRange,obstacleMask);
                 if(Hitinfo.collider != null){
-                    if ( (-SightAngle/4f<NSA)&&(SightAngle/4f>NSA)&&(Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 1.5f){
+                    if ( (-SightAngle/4f<NSA)&&(SightAngle/4f>NSA)&&(Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 2.5f){
                         Debug.Log($"I NEED TO DESTORY {Hitinfo.collider.name}");
                         Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.cyan,refreshRate);
                         StopCoroutine(co);
-                        Agent.speed = 0;
+                        Agent.velocity = new Vector3(0,0,0);
+                        Agent.speed = 0f;
                         Anim.SetBool("run",false);
                         Anim.SetTrigger("Attack");
-                        yield return new WaitForSeconds(0.5f);
+                        yield return new WaitForSeconds(0.7f);
+                        Agent.speed = 0;
                         Hitinfo.collider.tag = "Untagged";
                         if(Hitinfo.collider.GetComponent<Animator>())
                             Hitinfo.collider.GetComponent<Animator>().enabled = false;
@@ -77,7 +79,7 @@ public class MonsterMovementScript : MonoBehaviour
                         Hitinfo.collider.GetComponent<Rigidbody>().isKinematic = false;
                         Hitinfo.collider.GetComponent<Rigidbody>().AddForce(Hitinfo.collider.transform.position - transform.position * 5f);
                         Destroy(Hitinfo.collider.gameObject,3.5f);
-                        yield return new WaitForSeconds(2.5f);
+                        yield return new WaitForSeconds(3.5f);
                         StartCoroutine(co);
                         
                     }

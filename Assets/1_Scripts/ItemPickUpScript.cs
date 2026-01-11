@@ -7,14 +7,14 @@ using UnityEngine.InputSystem;
 
 public class ItemPickUpScript : MonoBehaviour
 {
-    public LayerMask PM;
+    public LayerMask PM; //PickUpMask
     public GameObject ItemDisplay;
     public InventoryManager inventoryManager;
     private Collider BeforeDetect;
     private GameObject[] Inventory;
     private CustomInputs Inputs;
     private RaycastHit hit;
-    private LightingEditor LE;
+    private LightingEditor LE;//E
     
     void Awake()
     {
@@ -34,8 +34,7 @@ public class ItemPickUpScript : MonoBehaviour
     void OnInteractive(){//E눌러서 템먹는 함수
         //Debug.Log("try Interactive");
         if(hit.collider != null){
-            OnThrowOut();//아템 버리기
-            hit.collider.gameObject.SetActive(false);//inv 매니저에서 이미 있는 아이템 가져오기
+            hit.collider.gameObject.SetActive(false);//콜라이더에 있는 아이템 안보이게 하기
             inventoryManager.InsertItem(hit.collider.gameObject);//아이템 인벤토리에 넣기
         }
         return;
