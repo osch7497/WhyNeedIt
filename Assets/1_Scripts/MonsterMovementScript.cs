@@ -16,6 +16,8 @@ public class MonsterMovementScript : MonoBehaviour
     [Header("RaySetting")]
     [SerializeField] float SightAngle; 
     [SerializeField] float SightRange; 
+    [Range(8f,24f)]
+    [SerializeField] float DoorSightDivide = 16f; 
     
     [Header("MaskSetting")]
     [SerializeField] private LayerMask TargetMask;  
@@ -52,53 +54,64 @@ public class MonsterMovementScript : MonoBehaviour
     IEnumerator GetSight(){
         float FAA = SightAngle/2f;//final add angle
         while(true){
-            float NSA = -SightAngle/2f;//now sight angle\
-            while(NSA < FAA){// 추가각도가 < ((-최대추가각도/2)~(최대 추가각도/2))
-                NSA+=angle;  //전체 90도일때 -45 ~ 45 추가
-                RaycastHit Hitinfo;
-                Vector3 ShotPos = transform.position + new Vector3(0,0.5f,0);//raycast 시작지점
-                Vector3 ShotRad = Quaternion.Euler(0,NSA+Head.eulerAngles.y,0) * Vector3.forward;//raycast 각도
-                Physics.Raycast(ShotPos,Quaternion.Euler(0,NSA+Head.eulerAngles.y,0) * Vector3.forward,out Hitinfo,SightRange,obstacleMask);
-                if(Hitinfo.collider != null){
-                    if ( (-SightAngle/4f<NSA)&&(SightAngle/4f>NSA)&&(Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 2.5f){
-                        Debug.Log($"I NEED TO DESTORY {Hitinfo.collider.name}");
-                        Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.cyan,refreshRate);
-                        StopCoroutine(co);
-                        Agent.velocity = new Vector3(0,0,0);
-                        Agent.speed = 0f;
-                        Anim.SetBool("run",false);
-                        Anim.SetTrigger("Attack");
-                        yield return new WaitForSeconds(0.7f);
-                        Agent.speed = 0;
-                        Hitinfo.collider.tag = "Untagged";
-                        if(Hitinfo.collider.GetComponent<Animator>())
-                            Hitinfo.collider.GetComponent<Animator>().enabled = false;
-                        if(Hitinfo.collider.GetComponent<Rigidbody>()==null){
-                            Hitinfo.collider.AddComponent<Rigidbody>();
+            float NSA2 = -SightAngle/2f;//now sight angle2\
+            while(NSA2 < FAA){
+                NSA2+=angle;
+                float NSAMAX = SightAngle/(2f);
+                float NSA = -SightAngle/(2f);//now sight angle\
+                Debug.Log($"{NSA2},{NSAMAX}");
+                while(NSA < NSAMAX){// 추가각도가 < ((-최대추가각도/2)~(최대 추가각도/2))
+                    NSA+=angle;  //전체 90도일때 -45 ~ 45 추가
+                    RaycastHit Hitinfo;
+                    Vector3 ShotPos = transform.position + new Vector3(0,0.5f,0);//raycast 시작지점
+                    Vector3 ShotRad = Quaternion.Euler(NSA2,NSA+Head.eulerAngles.y,0) * Vector3.forward;//raycast 각도
+                    Physics.Raycast(ShotPos,ShotRad,out Hitinfo,SightRange,obstacleMask);
+                    if(Hitinfo.collider != null){
+                        if ( (-SightAngle/DoorSightDivide<NSA)&&(SightAngle/DoorSightDivide>NSA)&&(Hitinfo.collider.CompareTag("Door")||Hitinfo.collider.CompareTag("LockedDoor")) && Hitinfo.distance < 2f){
+                            Debug.Log($"I NEED TO DESTORY {Hitinfo.collider.name}");
+                            Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.cyan,refreshRate);
+                            StopCoroutine(co);
+                            Agent.velocity = new Vector3(0,0,0);
+                            Agent.speed = 0f;
+                            Anim.SetBool("run",false);
+                            Anim.SetTrigger("Attack");
+                            yield return new WaitForSeconds(0.7f);
+                            Agent.speed = 0;
+                            Hitinfo.collider.tag = "Untagged";
+                            if(Hitinfo.collider.GetComponent<Animator>())
+                                Hitinfo.collider.GetComponent<Animator>().enabled = false;
+                            if(Hitinfo.collider.GetComponent<Rigidbody>()==null){
+                                Hitinfo.collider.AddComponent<Rigidbody>();
+                            }
+                            Hitinfo.collider.GetComponent<Rigidbody>().isKinematic = false;
+                            Hitinfo.collider.GetComponent<Rigidbody>().AddForce(Hitinfo.collider.transform.position - transform.position * 5f);
+                            Destroy(Hitinfo.collider.gameObject,3.5f);
+                            yield return new WaitForSeconds(3.5f);
+                            StartCoroutine(co);
+                            
                         }
-                        Hitinfo.collider.GetComponent<Rigidbody>().isKinematic = false;
-                        Hitinfo.collider.GetComponent<Rigidbody>().AddForce(Hitinfo.collider.transform.position - transform.position * 5f);
-                        Destroy(Hitinfo.collider.gameObject,3.5f);
-                        yield return new WaitForSeconds(3.5f);
-                        StartCoroutine(co);
-                        
-                    }
-                    else if (Hitinfo.collider.CompareTag("Player") && !target.CompareTag("Player")){
-                        Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.red,refreshRate);
-                        lastseenplayer = Time.time;
-                        target = Hitinfo.collider.transform;
-                        Debug.Log("I SAW PLAYER!!");
-                        StopCoroutine(co);
-                        StartCoroutine(co);
+                        else if (Hitinfo.collider.CompareTag("Player") && !target.CompareTag("Player")){
+                            Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.red,refreshRate);
+                            lastseenplayer = Time.time;
+                            target = Hitinfo.collider.transform;
+                            Debug.Log("I SAW PLAYER!!");
+                            StopCoroutine(co);
+                            StartCoroutine(co);
+                        }
+                        else{
+                            if(((-SightAngle/DoorSightDivide)<NSA)&&((SightAngle/DoorSightDivide)>NSA))
+                                Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.orange,refreshRate);
+                            else
+                                Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.yellow,refreshRate);
+                        }
                     }
                     else{
-                        Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.yellow,refreshRate);
-                    }
+                        if(((-SightAngle/DoorSightDivide)<NSA)&&((SightAngle/DoorSightDivide)>NSA))
+                            Debug.DrawRay(ShotPos,ShotRad * SightRange,Color.darkGreen,refreshRate);
+                        else
+                            Debug.DrawRay(ShotPos,ShotRad * SightRange,Color.green,refreshRate);
+                    }  
                 }
-                else{
-                Debug.DrawRay(ShotPos,ShotRad * SightRange,Color.green,refreshRate);
-                }
-                
             }
             yield return new WaitForSeconds(refreshRate);
         }
