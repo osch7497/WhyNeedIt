@@ -2349,7 +2349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3614797478691427937, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_Name
-      value: Monster 1
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 3614797478691427937, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4465214240201357817, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_LocalScale.x
@@ -2425,7 +2429,7 @@ PrefabInstance:
       objectReference: {fileID: 843195676}
     - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: DoorSightDivide
-      value: 24
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: obstacleMask.m_Bits
@@ -12972,6 +12976,7 @@ GameObject:
   - component: {fileID: 278379865}
   - component: {fileID: 278379867}
   - component: {fileID: 278379866}
+  - component: {fileID: 278379868}
   m_Layer: 0
   m_Name: corridor_wall_C_classroom03
   m_TagString: Untagged
@@ -13050,6 +13055,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278379864}
+  m_Mesh: {fileID: 4300000, guid: 86f7547994e48cf4c9b3306d7dea7cf3, type: 3}
+--- !u!64 &278379868
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278379864}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 86f7547994e48cf4c9b3306d7dea7cf3, type: 3}
 --- !u!1 &279221027 stripped
 GameObject:
@@ -31160,6 +31187,7 @@ GameObject:
   - component: {fileID: 691440819}
   - component: {fileID: 691440821}
   - component: {fileID: 691440820}
+  - component: {fileID: 691440822}
   m_Layer: 0
   m_Name: corridor_wall_C_classroom03
   m_TagString: Untagged
@@ -31238,6 +31266,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691440818}
+  m_Mesh: {fileID: 4300000, guid: 86f7547994e48cf4c9b3306d7dea7cf3, type: 3}
+--- !u!64 &691440822
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691440818}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 86f7547994e48cf4c9b3306d7dea7cf3, type: 3}
 --- !u!1 &691473848 stripped
 GameObject:
@@ -109770,6 +109820,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 375548825}
+    - target: {fileID: 5620826692079330797, guid: 91fde5857165a4fcfbb43dd443336830, type: 3}
+      propertyPath: maxRunningTime
+      value: 99999
+      objectReference: {fileID: 0}
     - target: {fileID: 5620826692079330797, guid: 91fde5857165a4fcfbb43dd443336830, type: 3}
       propertyPath: multiplierRunSpeed
       value: 1.75
