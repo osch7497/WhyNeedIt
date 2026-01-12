@@ -11853,7 +11853,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1156612480896078, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1580201861}
   m_SourcePrefab: {fileID: 100100000, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
 --- !u!4 &264422212 stripped
 Transform:
@@ -13976,7 +13979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4725084730705994, guid: fb4622c96b8ac1e4988885288f8ea1f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.545
+      value: 37.994
       objectReference: {fileID: 0}
     - target: {fileID: 4725084730705994, guid: fb4622c96b8ac1e4988885288f8ea1f5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15015,6 +15018,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361292306}
   m_CullTransparentMesh: 1
+--- !u!1 &361316530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1156612480896078, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
+  m_PrefabInstance: {fileID: 1451426223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &361910412
 GameObject:
   m_ObjectHideFlags: 0
@@ -64308,13 +64316,37 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4581775676684970, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 264422212}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1156612480896078, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451426227}
   m_SourcePrefab: {fileID: 100100000, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
 --- !u!4 &1451426224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4581775676684970, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
   m_PrefabInstance: {fileID: 1451426223}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1451426227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361316530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7999998, y: 1.86, z: 0.55999994}
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!1 &1451681030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1294035309532974, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
@@ -68903,6 +68935,32 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1580201858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1156612480896078, guid: de4bf72960bf3dd4a8ea069a24b3439a, type: 3}
+  m_PrefabInstance: {fileID: 264422211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1580201861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580201858}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.8, y: 1.86, z: 0.55999994}
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!1 &1581530025
 GameObject:
   m_ObjectHideFlags: 0
@@ -101053,6 +101111,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2116542561487099959, guid: 91fde5857165a4fcfbb43dd443336830, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2877969282114432137, guid: 91fde5857165a4fcfbb43dd443336830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.241
