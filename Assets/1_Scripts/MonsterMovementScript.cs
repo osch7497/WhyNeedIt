@@ -57,8 +57,8 @@ public class MonsterMovementScript : MonoBehaviour
             float NSA2 = -SightAngle/2f;//now sight angle2\
             while(NSA2 < FAA){
                 NSA2+=angle;
-                float NSAMAX = SightAngle/(2f);
-                float NSA = -SightAngle/(2f);//now sight angle\
+                float NSAMAX = (SightAngle-math.abs(NSA2*2))*0.5f;
+                float NSA = -(SightAngle-math.abs(NSA2*2))*0.5f;//now sight angle
                 Debug.Log($"{NSA2},{NSAMAX}");
                 while(NSA < NSAMAX){// 추가각도가 < ((-최대추가각도/2)~(최대 추가각도/2))
                     NSA+=angle;  //전체 90도일때 -45 ~ 45 추가

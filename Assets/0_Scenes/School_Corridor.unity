@@ -2547,9 +2547,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 220140214}
     - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
+      propertyPath: SightAngle
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
+      propertyPath: SightRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: WayPointGroup
       value: 
       objectReference: {fileID: 843195676}
+    - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
+      propertyPath: DoorSightDivide
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: obstacleMask.m_Bits
       value: 1983
@@ -102486,7 +102498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877969282114432137, guid: 91fde5857165a4fcfbb43dd443336830, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.622
+      value: -29.39
       objectReference: {fileID: 0}
     - target: {fileID: 2877969282114432137, guid: 91fde5857165a4fcfbb43dd443336830, type: 3}
       propertyPath: m_LocalRotation.w
