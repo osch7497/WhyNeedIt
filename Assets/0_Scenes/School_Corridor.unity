@@ -1499,37 +1499,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1350001, y: 1.87, z: 0.041118998}
   m_Center: {x: -1.6524639, y: 0.945, z: 0.0194405}
---- !u!1 &33616466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 33616467}
-  m_Layer: 0
-  m_Name: door02_A2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &33616467
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33616466}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 1.575}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 879160739}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &34331552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1536718625486478, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
@@ -2482,11 +2451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465214240201357817, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.687
+      value: 15.442
       objectReference: {fileID: 0}
     - target: {fileID: 4465214240201357817, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.12
+      value: -33.896
       objectReference: {fileID: 0}
     - target: {fileID: 4465214240201357817, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4123,7 +4092,6 @@ Transform:
   - {fileID: 218559403}
   - {fileID: 364203994}
   - {fileID: 1721559861}
-  - {fileID: 879160739}
   - {fileID: 194904402}
   - {fileID: 1153636247}
   - {fileID: 1274745302}
@@ -9849,6 +9817,10 @@ PrefabInstance:
     - target: {fileID: 1747420921804466, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
       propertyPath: m_Name
       value: Corridor_Classroom02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747420921804466, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1792661361737752, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24634,7 +24606,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 1847
+    m_Bits: 823
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -30981,56 +30953,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.008341489, y: 0.009288911, z: 0.019162532}
   m_Center: {x: -0.000007635215, y: 0.00000086496607, z: 0.00000037485742}
---- !u!1001 &717784518
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1392864361}
-    m_Modifications:
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
---- !u!4 &717784519 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4022396991800388, guid: 141fc0e090924d442aad90bf15211fe9, type: 3}
-  m_PrefabInstance: {fileID: 717784518}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &717984746
 GameObject:
   m_ObjectHideFlags: 0
@@ -31421,6 +31343,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 93029648}
     m_Modifications:
+    - target: {fileID: 1840442144799882, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4759358708010058, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -38643,39 +38569,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878846309}
   m_Mesh: {fileID: 4300000, guid: 46f57c43b6d86e1489bda0d760c077b4, type: 3}
---- !u!1 &879160738
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 879160739}
-  m_Layer: 0
-  m_Name: Corridor_Classroom03_1 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &879160739
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879160738}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 24.75, y: 0, z: -33.15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1392864361}
-  - {fileID: 33616467}
-  m_Father: {fileID: 93029648}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &880020175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48262,7 +48155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1091673180
 Transform:
   m_ObjectHideFlags: 0
@@ -48429,7 +48322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1097230207
 Transform:
   m_ObjectHideFlags: 0
@@ -59492,6 +59385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor_Classroom02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1747420921804466, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1792661361737752, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -61084,7 +60981,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1384388266
 Transform:
@@ -61421,38 +61318,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 11.502026, y: 3.3437586, z: 0.45915604}
   m_Center: {x: 3.9819355, y: 1.7681198, z: -0.27042198}
---- !u!1 &1392864360
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392864361}
-  m_Layer: 0
-  m_Name: classroom03_1_8x5.5x3.5m
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1392864361
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392864360}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.65}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 717784519}
-  m_Father: {fileID: 879160739}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393053202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1248519532828056, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
@@ -71641,6 +71506,10 @@ PrefabInstance:
     - target: {fileID: 1840442144799882, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
       propertyPath: m_Name
       value: corridor_wall_end_A5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840442144799882, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4759358708010058, guid: 61b8b408fe4ff4f47a0472b81561a35c, type: 3}
       propertyPath: m_RootOrder
@@ -91406,6 +91275,10 @@ PrefabInstance:
     - target: {fileID: 1747420921804466, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
       propertyPath: m_Name
       value: Corridor_Classroom02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747420921804466, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1792661361737752, guid: bce61c8eb2922d44c9b3f55591835cff, type: 3}
       propertyPath: m_StaticEditorFlags
