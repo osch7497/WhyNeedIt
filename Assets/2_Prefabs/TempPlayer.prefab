@@ -155,13 +155,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76425f5bd0b0d4739b4f5a0f95a332da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FpsController
-  moveSpeed: 5
-  multiplierRunSpeed: 1.5
-  lookSpeed: 60
+  moveSpeed: 3
+  multiplierRunSpeed: 1.75
+  lookSpeed: 50
   maxRunningTime: 10
   maxFloatingTime: 13
   staminaBar: {fileID: 0}
-  playerCamera: {fileID: 2696896065593558691}
+  playerCamera: {fileID: 221616462975716391}
+  waveForce: 1
+  waveSpeed: 1
+  DefaultFov: 60
+  RunFov: 60
 --- !u!1 &8150648517505378323
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,3 +369,4 @@ MonoBehaviour:
     m_Bits: 64
   ItemDisplay: {fileID: 8150648517505378323}
   inventoryManager: {fileID: 0}
+  ActDescriptionTextUI: {fileID: 0}

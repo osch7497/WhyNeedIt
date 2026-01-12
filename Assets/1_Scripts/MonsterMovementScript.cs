@@ -3,6 +3,8 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 public class MonsterMovementScript : MonoBehaviour
 {
@@ -16,8 +18,8 @@ public class MonsterMovementScript : MonoBehaviour
     [Header("RaySetting")]
     [SerializeField] float SightAngle; 
     [SerializeField] float SightRange; 
-    [Range(8f,24f)]
-    [SerializeField] float DoorSightDivide = 16f; 
+    [Range(8f,45f)]
+    [SerializeField] float DoorSightDivide = 45f; 
     
     [Header("MaskSetting")]
     [SerializeField] private LayerMask TargetMask;  
@@ -31,6 +33,9 @@ public class MonsterMovementScript : MonoBehaviour
     [Header("Head Setting")][SerializeField]
     private Transform Head; //머리 각도 세팅
 
+    [Header("Attack Setting")][SerializeField][Range(0.1f,10f)]
+    private float PlayerAttackRange = 1.5f; //머리 각도 세팅
+
     float lastseenplayer;
     IEnumerator co;
     void Awake()
@@ -43,7 +48,7 @@ public class MonsterMovementScript : MonoBehaviour
         }
         co = MoneterAI();
         StartCoroutine(co);
-        lastseenplayer = Time.time - 5f;
+        lastseenplayer = Time.time - 7f;
         IEnumerator co2 = GetSight();
         StartCoroutine(co2);
     }
@@ -59,7 +64,6 @@ public class MonsterMovementScript : MonoBehaviour
                 NSA2+=angle;
                 float NSAMAX = (SightAngle-math.abs(NSA2*2))*0.5f;
                 float NSA = -(SightAngle-math.abs(NSA2*2))*0.5f;//now sight angle
-                Debug.Log($"{NSA2},{NSAMAX}");
                 while(NSA < NSAMAX){// 추가각도가 < ((-최대추가각도/2)~(최대 추가각도/2))
                     NSA+=angle;  //전체 90도일때 -45 ~ 45 추가
                     RaycastHit Hitinfo;
@@ -95,6 +99,7 @@ public class MonsterMovementScript : MonoBehaviour
                             lastseenplayer = Time.time;
                             target = Hitinfo.collider.transform;
                             Debug.Log("I SAW PLAYER!!");
+                            Head.GetComponent<AimConstraint>().weight = 1f;
                             StopCoroutine(co);
                             StartCoroutine(co);
                         }
@@ -122,16 +127,21 @@ public class MonsterMovementScript : MonoBehaviour
             SetRandomPoint();
         while(true){
             Agent.SetDestination(target.position);
-            if(Vector3.Distance(transform.position,target.position) > 1.5f){
+            if(Vector3.Distance(transform.position,target.position) > PlayerAttackRange){
                     Agent.speed = 5;
                     Anim.SetBool("run",true);
             }
             else{
                 Anim.SetBool("run",false);
                 if(target.CompareTag("Player")){
+                    target.GetComponent<FpsController>().OnAttacked(Head.transform);
                     Agent.speed = 0;
+                    Agent.velocity = Vector3.zero;
                     Anim.SetTrigger("Attack");
-                    yield return new WaitForSeconds(2f);
+                    Debug.Log($"ATS:{Time.time}");
+                    yield return new WaitForSeconds(2.3f);
+                    Debug.Log($"ATF:{Time.time}");
+                    SceneManager.LoadScene(gameObject.scene.name);
                 }else{
                     SetRandomPoint();
                     Anim.SetBool("run",false);
@@ -149,7 +159,8 @@ public class MonsterMovementScript : MonoBehaviour
     {
         if(target.CompareTag("Player") && Time.time - lastseenplayer > 7f){
             Debug.Log("I nEed tO FInD PLAYER!!");
-            SetRandomPoint();
+            Head.GetComponent<AimConstraint>().weight = 0f;
+            SetRandomPoint();   
         }
     }
 }

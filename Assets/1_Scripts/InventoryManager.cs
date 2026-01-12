@@ -10,7 +10,9 @@ public class InventoryManager : MonoBehaviour
     private Image[] ItemIcons;
     private RectTransform[] ItemIconBG;
     private TextMeshProUGUI[] ItemNames;
+    [SerializeField]private TextMeshProUGUI ItemNameUI;
     public static Item holdingItem;
+    public static GameObject holdingObject;
     private int SelectedIndex;//Selected Inventory
     void Awake()
     {
@@ -27,9 +29,14 @@ public class InventoryManager : MonoBehaviour
         }
         //처음 선택된 0번 인벤토리만 확대시킴
         ItemIconBG[0].localScale = new Vector3(1.2f,1.2f,1.2f);
+        holdingItem = null;
+        holdingObject = null;
     }
     void Update(){
-        
+        if(holdingItem != null)
+            ItemNameUI.text = holdingItem.itemName;
+        else
+            ItemNameUI.text = "";
     }
     public GameObject InsertItem(GameObject Item){//인벤에 아이템 넣기 메서트
         int itemindex = SelectedIndex;
@@ -51,10 +58,12 @@ public class InventoryManager : MonoBehaviour
         ItemIcons[itemindex].enabled = true;
         ItemNames[itemindex].text = item.itemName;    //이름
         ItemIcons[itemindex].sprite = item.itemImage; //이미지
-        Inventory[itemindex] = Item;                  //오브젝트
-        if(itemindex == SelectedIndex)
+        Inventory[itemindex] = Item;          
+        if(itemindex == SelectedIndex){
             Inventory[itemindex].SetActive(true);         //아이템 보이게 하기(팔에 보이게 하기 위해서)
-        holdingItem = Inventory[itemindex].GetComponent<ItemScript>().Item;
+            holdingItem = Inventory[itemindex].GetComponent<ItemScript>().Item;        //오브젝트
+            holdingObject = Inventory[itemindex];
+        }
         return ReturnValue;
 
     }
@@ -64,7 +73,8 @@ public class InventoryManager : MonoBehaviour
     public GameObject ThrowOutItem(){
         ItemIcons[SelectedIndex].sprite = null;//인벤토리 스프라이트를 비움
         ItemIcons[SelectedIndex].enabled = false;
-            holdingItem = null;
+        holdingItem = null;
+        holdingObject = null;
         if(Inventory[SelectedIndex] != null){
             GameObject ReturnValue = Inventory[SelectedIndex];//현재 사용중(이었던)아이템 미리 저장
             Inventory[SelectedIndex] = null;//인벤토리 비움
@@ -83,9 +93,13 @@ public class InventoryManager : MonoBehaviour
         SelectedIndex = index;//인벤토리 번호 업데이트
         if(Inventory[SelectedIndex] != null){
             Inventory[SelectedIndex].SetActive(true);//현재 아이템칸에 템 있으면 아이템 보이게하기
-            holdingItem = Inventory[SelectedIndex].GetComponent<ItemScript>().Item;}
-        else
+            holdingItem = Inventory[SelectedIndex].GetComponent<ItemScript>().Item;
+            holdingObject = Inventory[SelectedIndex];
+        }
+        else{
             holdingItem = null;
+            holdingObject = null;
+        }
         ItemIconBG[index].localScale = new Vector3(1.2f,1.2f,1.2f);//선택된 아이템 번호 1.2로 크기지정
     }
 }

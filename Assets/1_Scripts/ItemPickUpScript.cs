@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -15,6 +16,8 @@ public class ItemPickUpScript : MonoBehaviour
     private CustomInputs Inputs;
     private RaycastHit hit;
     private LightingEditor LE;//E
+    [SerializeField]private TextMeshProUGUI ActDescriptionTextUI;
+    
     
     void Awake()
     {
@@ -58,8 +61,9 @@ public class ItemPickUpScript : MonoBehaviour
             if(hit.collider != BeforeDetect && BeforeDetect != null){//콜라이더가 바뀌면(다른 아이템을 가리켰으면)
                 OffGuide();
             }
+            ActDescriptionTextUI.rectTransform.parent.gameObject.SetActive(true);
+            ActDescriptionTextUI.text = $"{hit.collider.GetComponent<ItemScript>().Item.itemName} 줍기";
             hit.collider.GetComponent<Outline>().enabled = true;
-            hit.collider.transform.GetChild(hit.collider.transform.childCount-1).gameObject.SetActive(true);
             BeforeDetect = hit.collider;
             AimPointScript.Item = true;
         }
@@ -83,7 +87,7 @@ public class ItemPickUpScript : MonoBehaviour
     }
     void OffGuide()//UI 종료 메서드
     {
+        ActDescriptionTextUI.transform.parent.gameObject.SetActive(false);
         BeforeDetect.GetComponent<Outline>().enabled = false;//아웃라인 끄기
-        BeforeDetect.transform.GetChild(BeforeDetect.transform.childCount-1).gameObject.SetActive(false);//가이드 ui 끄기
     }
 }

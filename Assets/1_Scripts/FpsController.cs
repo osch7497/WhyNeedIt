@@ -40,7 +40,7 @@ public class FpsController : MonoBehaviour
 
     private Color emptyColor;
     private Color CannotRunColor;
-
+    private IEnumerator co;
 
     void Awake()
     {
@@ -60,119 +60,135 @@ public class FpsController : MonoBehaviour
         
         emptyColor = new Color(34 / 255f, 34 / 255f, 34 / 255f);
         CannotRunColor = new Color(171/255f, 41/255f, 14/255f);
+        co = UpdateCO();
+        StartCoroutine(co);
     }
-
+    IEnumerator attackedCO(Transform monsterPos){
+        while (true)
+        {
+            playerCamera.transform.LookAt(monsterPos.position);
+            yield return null;
+        }
+    }
     void OnEnable() => playerInput.Enable();
     void OnDisable() => playerInput.Disable();
-
-    void Update()
+    public void OnAttacked(Transform monsterPos)
     {
-        // 플레이어 이동
-        moveInput = playerInput.Player.Move.ReadValue<Vector2>();
+        StopCoroutine(co);
+        co = attackedCO(monsterPos);
+        StartCoroutine(co);
+    }
+    IEnumerator UpdateCO()
+    {
+        while(true){
+            // 플레이어 이동
+            moveInput = playerInput.Player.Move.ReadValue<Vector2>();
 
-        // 방향 구하기
-        Vector3 moveDir = playerCamera.transform.forward * moveInput.y + playerCamera.transform.right * moveInput.x;
-        moveDir.y = 0f;
+            // 방향 구하기
+            Vector3 moveDir = playerCamera.transform.forward * moveInput.y + playerCamera.transform.right * moveInput.x;
+            moveDir.y = 0f;
 
-        // 속도 부여
-        Vector3 velocity = rb.linearVelocity;
-        velocity.x = moveDir.x * moveSpeed;
-        velocity.z = moveDir.z * moveSpeed;
+            // 속도 부여
+            Vector3 velocity = rb.linearVelocity;
+            velocity.x = moveDir.x * moveSpeed;
+            velocity.z = moveDir.z * moveSpeed;
 
-        if (currentStamina > 30f)
-        {
-            staminaBar.color = Color.white;
-        }
-        
-        // RUN키가 현재 프레임에 눌렀을때 스태미나가 30 이상이면 달리기
-        if (playerInput.Player.Run.WasPressedThisFrame())
-        {
-            if (currentStamina >= 30f)
+            if (currentStamina > 30f)
             {
-                isRunning = true;
+                staminaBar.color = Color.white;
             }
-            else
+            
+            // RUN키가 현재 프레임에 눌렀을때 스태미나가 30 이상이면 달리기
+            if (playerInput.Player.Run.WasPressedThisFrame())
             {
-                staminaBar.color = emptyColor;
+                if (currentStamina >= 30f)
+                {
+                    isRunning = true;
+                }
+                else
+                {
+                    staminaBar.color = emptyColor;
+                }
             }
-        }
 
-        // RUN 키가 현재 프레임에서 떼지면 달리기 해제
-        if (playerInput.Player.Run.WasReleasedThisFrame())
-        {
-            isRunning = false;
-
-            if (currentStamina <= 30f)
-            {
-                staminaBar.color = CannotRunColor;
-            }
-        }
-
-        // 달리는 도중이라면
-        if (isRunning)
-        {
-            playerCamera.fieldOfView = RunFov;
-            velocity.x *= multiplierRunSpeed;
-            velocity.z *= multiplierRunSpeed;
-
-            if (currentStamina >= 0.1f)
-            {
-                currentStamina -= (100f / maxRunningTime) * Time.deltaTime;
-            }
-            else
+            // RUN 키가 현재 프레임에서 떼지면 달리기 해제
+            if (playerInput.Player.Run.WasReleasedThisFrame())
             {
                 isRunning = false;
+
+                if (currentStamina <= 30f)
+                {
+                    staminaBar.color = CannotRunColor;
+                }
             }
-        }
-        
-        // 스태미나는 없는데 달리기 키가 아직 눌러져 있는 경우
-        else if (playerInput.Player.Run.IsPressed())
-        {
-            if (currentStamina >= 0.1f && staminaBar.color != emptyColor)
+
+            // 달리는 도중이라면
+            if (isRunning)
             {
-                currentStamina -= (100f / maxRunningTime) * Time.deltaTime;
-            } 
-        }
+                playerCamera.fieldOfView = RunFov;
+                velocity.x *= multiplierRunSpeed;
+                velocity.z *= multiplierRunSpeed;
 
-        else
-        {
-            playerCamera.fieldOfView = DefaultFov;
-            if (currentStamina < 100f) currentStamina += (100f / maxFloatingTime) * Time.deltaTime;
-        }
+                if (currentStamina >= 0.1f)
+                {
+                    currentStamina -= (100f / maxRunningTime) * Time.deltaTime;
+                }
+                else
+                {
+                    isRunning = false;
+                }
+            }
+            
+            // 스태미나는 없는데 달리기 키가 아직 눌러져 있는 경우
+            else if (playerInput.Player.Run.IsPressed())
+            {
+                if (currentStamina >= 0.1f && staminaBar.color != emptyColor)
+                {
+                    currentStamina -= (100f / maxRunningTime) * Time.deltaTime;
+                } 
+            }
 
-        staminaBar.transform.localScale = new Vector3(currentStamina / 100f,
-            staminaBar.transform.localScale.y,
-            staminaBar.transform.localScale.z);
+            else
+            {
+                playerCamera.fieldOfView = DefaultFov;
+                if (currentStamina < 100f) currentStamina += (100f / maxFloatingTime) * Time.deltaTime;
+            }
 
-        rb.linearVelocity = velocity;
+            staminaBar.transform.localScale = new Vector3(currentStamina / 100f,
+                staminaBar.transform.localScale.y,
+                staminaBar.transform.localScale.z);
 
-        // 화면 이동
-        lookInput = playerInput.Player.Look.ReadValue<Vector2>();
-        transform.Rotate(Vector3.up * lookInput.x * lookSpeed * Time.deltaTime);
+            rb.linearVelocity = velocity;
 
-        xRotation -= lookInput.y * lookSpeed * Time.deltaTime;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            // 화면 이동
+            lookInput = playerInput.Player.Look.ReadValue<Vector2>();
+            transform.Rotate(Vector3.up * lookInput.x * lookSpeed * Time.deltaTime);
 
-        if (playerCamera != null)
-        {
-            playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        }
+            xRotation -= lookInput.y * lookSpeed * Time.deltaTime;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+            if (playerCamera != null)
+            {
+                playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            }
 
 
-        // 머리 흔들림
-        if (moveInput != Vector2.zero)
-        {
-            sinWaving += Time.deltaTime * ((isRunning && currentStamina > 0.1f) ? 14f : 9f) * waveSpeed;
-            float yOffset = Mathf.Sin(sinWaving) * ((isRunning && currentStamina > 0.1f) ? 0.10f : 0.05f) * waveForce;
+            // 머리 흔들림
+            if (moveInput != Vector2.zero)
+            {
+                sinWaving += Time.deltaTime * ((isRunning && currentStamina > 0.1f) ? 14f : 9f) * waveSpeed;
+                float yOffset = Mathf.Sin(sinWaving) * ((isRunning && currentStamina > 0.1f) ? 0.10f : 0.05f) * waveForce;
 
-            playerCamera.transform.localPosition =
-                cameraOriginPos + new Vector3(0f, yOffset, 0f);
-        }
-        else
-        {
-            sinWaving = 0f;
-            playerCamera.transform.localPosition =
-                Vector3.Lerp(playerCamera.transform.localPosition, cameraOriginPos, Time.deltaTime * 20f);
+                playerCamera.transform.localPosition =
+                    cameraOriginPos + new Vector3(0f, yOffset, 0f);
+            }
+            else
+            {
+                sinWaving = 0f;
+                playerCamera.transform.localPosition =
+                    Vector3.Lerp(playerCamera.transform.localPosition, cameraOriginPos, Time.deltaTime * 20f);
+            }
+            yield return null;
         }
     }
 }
