@@ -59,7 +59,8 @@ public class FpsController : MonoBehaviour
         currentStamina = 100f;
         
         emptyColor = new Color(34 / 255f, 34 / 255f, 34 / 255f);
-        CannotRunColor = new Color(171/255f, 41/255f, 14/255f);
+        CannotRunColor = new Color(171 / 255f, 41 / 255f, 14 / 255f);
+        Application.targetFrameRate = 120;
         co = UpdateCO();
         StartCoroutine(co);
     }
