@@ -39,6 +39,7 @@ public class DoorInteractScript : MonoBehaviour
                     PDS.Door.tag = "Door";
                     DO.OutlineColor = new Color(1,1,1);
                     hit.collider.transform.tag = "Untagged";
+                    AudioManager.instance.PlaySFX("KeyUnlock", hit.collider.transform.position);
                     Destroy(hit.collider.gameObject,2.5f);
                 }
             }

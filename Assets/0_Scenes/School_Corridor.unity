@@ -3471,6 +3471,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 4320574690155022862, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
+      propertyPath: outlineWidth
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565322614560213925, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565322614560213925, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6090965949265703873, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3534,6 +3546,18 @@ PrefabInstance:
     - target: {fileID: 8368287109772996520, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383477221868517337, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383477221868517337, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383477221868517337, guid: cc5f1e99b7ef142919f2bef31237f02a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23195,6 +23219,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 96d8ee6a6627c4a5389239d55d673e69, type: 3}
   - {fileID: 8300000, guid: 3acf7fe17c89a43b8971b25e5e6d40f9, type: 3}
   - {fileID: 8300000, guid: 38fe739fd91e440a7af6db680fcce9e8, type: 3}
+  - {fileID: 8300000, guid: fbc95a42727e8448bbc266842dfd3bb7, type: 3}
   sfxSources: []
 --- !u!4 &781758594
 Transform:
@@ -32118,6 +32143,10 @@ PrefabInstance:
     - target: {fileID: 6765429841704026073, guid: 2ad38adf61795489684c067ecf19cc95, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536853213701570434, guid: 2ad38adf61795489684c067ecf19cc95, type: 3}
+      propertyPath: outlineWidth
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9125728597529141373, guid: 2ad38adf61795489684c067ecf19cc95, type: 3}
       propertyPath: m_Name
@@ -63947,7 +63976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Outline
-  outlineMode: 1
+  outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 7
   precomputeOutline: 0
