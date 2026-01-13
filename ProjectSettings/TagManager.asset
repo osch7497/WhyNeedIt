@@ -10,6 +10,7 @@ TagManager:
   - LockedDoor
   - Door
   - FrontDoor
+  - KeyPadButton
   layers:
   - Default
   - TransparentFX

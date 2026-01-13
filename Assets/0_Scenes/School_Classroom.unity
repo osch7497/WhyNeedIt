@@ -1583,7 +1583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &48875891
 Transform:
   m_ObjectHideFlags: 0
@@ -40468,7 +40468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1102041195
 Transform:
   m_ObjectHideFlags: 0
@@ -49179,8 +49179,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FpsController
   moveSpeed: 5
+  multiplierRunSpeed: 1.5
   lookSpeed: 60
+  maxRunningTime: 10
+  maxFloatingTime: 13
+  staminaBar: {fileID: 0}
   playerCamera: {fileID: 962866402}
+  waveForce: 0
+  waveSpeed: 0
+  DefaultFov: 0
+  RunFov: 0
 --- !u!54 &1355456622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -71175,7 +71183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2046101141
 Transform:
   m_ObjectHideFlags: 0
