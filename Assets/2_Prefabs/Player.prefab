@@ -14,12 +14,13 @@ GameObject:
   - component: {fileID: 6318001615683080863}
   - component: {fileID: 2116542561487099959}
   - component: {fileID: 5620826692079330797}
+  - component: {fileID: 6706125285439340614}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2877969282114432137
 Transform:
@@ -124,7 +125,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5794048480100297820}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -158,7 +159,7 @@ MonoBehaviour:
   moveSpeed: 3
   multiplierRunSpeed: 1.75
   lookSpeed: 50
-  maxRunningTime: 10
+  maxRunningTime: 99999
   maxFloatingTime: 13
   staminaBar: {fileID: 0}
   playerCamera: {fileID: 221616462975716391}
@@ -166,6 +167,18 @@ MonoBehaviour:
   waveSpeed: 1
   DefaultFov: 60
   RunFov: 60
+--- !u!114 &6706125285439340614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5794048480100297820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ae858f58e384c73b89cbdaa93ce973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UseItem
 --- !u!1 &8150648517505378323
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +193,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &4040087900881836332
 Transform:
@@ -216,7 +229,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2696896065593558691
 Transform:
