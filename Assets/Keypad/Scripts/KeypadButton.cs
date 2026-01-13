@@ -6,7 +6,7 @@ namespace NavKeypad
     public class KeypadButton : MonoBehaviour
     {
         [Header("Value")]
-        [SerializeField] private string value;
+        [SerializeField] public string value;
         [Header("Button Animation Settings")]
         [SerializeField] private float bttnspeed = 0.1f;
         [SerializeField] private float moveDist = 0.0025f;
@@ -20,6 +20,7 @@ namespace NavKeypad
             if (!moving)
             {
                 keypad.AddInput(value);
+                Debug.Log($"{value} pressed");
                 StartCoroutine(MoveSmooth());
             }
         }

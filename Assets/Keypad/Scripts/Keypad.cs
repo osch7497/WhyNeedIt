@@ -20,6 +20,7 @@ namespace NavKeypad
         [Header("Settings")]
         [SerializeField] private string accessGrantedText = "Granted";
         [SerializeField] private string accessDeniedText = "Denied";
+        [SerializeField] private GameObject LockedDoor = null;
 
         [Header("Visuals")]
         [SerializeField] private float displayResultTime = 1f;
@@ -125,7 +126,10 @@ namespace NavKeypad
             onAccessGranted?.Invoke();
             panelMesh.material.SetVector("_EmissionColor", screenGrantedColor * screenIntensity);
             audioSource.PlayOneShot(accessGrantedSfx);
+            if(LockedDoor != null){
+                LockedDoor.tag = "Door";
+                LockedDoor.GetComponent<Outline>().OutlineColor = Color.white;
+            }
         }
-
     }
 }
