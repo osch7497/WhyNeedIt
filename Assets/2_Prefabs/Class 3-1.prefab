@@ -339,7 +339,9 @@ GameObject:
   - component: {fileID: 5394271888943323633}
   - component: {fileID: 1204617249478979819}
   - component: {fileID: 2673384723561011326}
+  - component: {fileID: 4160186940441236865}
   - component: {fileID: 2686952041142831322}
+  - component: {fileID: 3030518269517531939}
   m_Layer: 7
   m_Name: door02_door2
   m_TagString: LockedDoor
@@ -440,6 +442,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.96, y: 1.99, z: 0.04}
   m_Center: {x: -0.53999996, y: 1.005, z: -0.02}
+--- !u!114 &4160186940441236865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340772704929990247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba24274b42fb34931a04409bc191e991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSound
 --- !u!114 &2686952041142831322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +472,28 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &3030518269517531939
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340772704929990247}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e072cefa17124f058903f65287ddf0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &396119277077498299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1420,7 @@ GameObject:
   - component: {fileID: 7070264963141898966}
   - component: {fileID: 8963373798096724132}
   - component: {fileID: 3392615290216626871}
+  - component: {fileID: 4011241106194078504}
   - component: {fileID: 7977620743839675134}
   - component: {fileID: 1524729066592916241}
   m_Layer: 7
@@ -1487,6 +1524,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4011241106194078504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805558209171816332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba24274b42fb34931a04409bc191e991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSound
 --- !u!114 &7977620743839675134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3461,7 +3510,9 @@ GameObject:
   - component: {fileID: 158248388330623266}
   - component: {fileID: 7553147511434812247}
   - component: {fileID: 2315881026133629986}
+  - component: {fileID: 8153595070279670611}
   - component: {fileID: 1380537028715907927}
+  - component: {fileID: 2893383883659923927}
   m_Layer: 7
   m_Name: door02_door1
   m_TagString: LockedDoor
@@ -3562,6 +3613,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.96, y: 1.99, z: 0.04}
   m_Center: {x: 0.53999996, y: 1.005, z: 0.02}
+--- !u!114 &8153595070279670611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7880850039122629188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba24274b42fb34931a04409bc191e991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSound
 --- !u!114 &1380537028715907927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3580,6 +3643,28 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &2893383883659923927
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7880850039122629188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 040b3976830954859962f8db403cc8d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7989392403923875048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,6 +3877,7 @@ GameObject:
   - component: {fileID: 1186799638420190342}
   - component: {fileID: 5971177173488083390}
   - component: {fileID: 9140214130082342858}
+  - component: {fileID: 5671821115782711398}
   - component: {fileID: 3990270062312406649}
   - component: {fileID: 5539976072437064323}
   - component: {fileID: 8131469957454189260}
@@ -3874,6 +3960,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5671821115782711398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8377448274272176050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba24274b42fb34931a04409bc191e991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSound
 --- !u!114 &3990270062312406649
 MonoBehaviour:
   m_ObjectHideFlags: 0

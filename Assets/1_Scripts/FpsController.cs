@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System;
 using System.Collections;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class FpsController : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class FpsController : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 lookInput;
     private bool isRunning = false;
+    private bool isWalking = false;
+    private float timer = 0f;
     private float currentStamina;
     private float xRotation;
     private float sinWaving;
@@ -41,7 +44,7 @@ public class FpsController : MonoBehaviour
     private Color emptyColor;
     private Color CannotRunColor;
     private IEnumerator co;
-
+    
     void Awake()
     {
         playerInput = new CustomInputs();
@@ -64,6 +67,7 @@ public class FpsController : MonoBehaviour
         co = UpdateCO();
         StartCoroutine(co);
     }
+    
     IEnumerator attackedCO(Transform monsterPos){
         while (true)
         {
@@ -71,29 +75,39 @@ public class FpsController : MonoBehaviour
             yield return null;
         }
     }
+    
     void OnEnable() => playerInput.Enable();
     void OnDisable() => playerInput.Disable();
+    
     public void OnAttacked(Transform monsterPos)
     {
         StopCoroutine(co);
         co = attackedCO(monsterPos);
         StartCoroutine(co);
     }
+    
     IEnumerator UpdateCO()
     {
         while(true){
+            timer += Time.deltaTime;
+            if (timer > (isRunning ? 0.67f / multiplierRunSpeed : 0.67f))
+            {
+                StartCoroutine(FootstepSound());
+                timer = 0f;
+            }
+            
             // 플레이어 이동
             moveInput = playerInput.Player.Move.ReadValue<Vector2>();
 
             // 방향 구하기
             Vector3 moveDir = playerCamera.transform.forward * moveInput.y + playerCamera.transform.right * moveInput.x;
             moveDir.y = 0f;
-
+            
             // 속도 부여
             Vector3 velocity = rb.linearVelocity;
             velocity.x = moveDir.x * moveSpeed;
             velocity.z = moveDir.z * moveSpeed;
-
+            
             if (currentStamina > 30f)
             {
                 staminaBar.color = Color.white;
@@ -182,14 +196,30 @@ public class FpsController : MonoBehaviour
 
                 playerCamera.transform.localPosition =
                     cameraOriginPos + new Vector3(0f, yOffset, 0f);
+
+                isWalking = true;
             }
             else
             {
                 sinWaving = 0f;
                 playerCamera.transform.localPosition =
                     Vector3.Lerp(playerCamera.transform.localPosition, cameraOriginPos, Time.deltaTime * 20f);
+                
+                isWalking = false;
             }
             yield return null;
         }
+    }
+
+    IEnumerator FootstepSound()
+    {
+        string[] SFXs = { "Footstep1", "Footstep2", "Footstep3", "Footstep4" };
+
+        if (isWalking || isRunning)
+        {
+            AudioManager.instance.PlaySFX(SFXs[Random.Range(0, SFXs.Length)], transform.position, volume:0.04f);
+        }
+        
+        yield return null;
     }
 }
