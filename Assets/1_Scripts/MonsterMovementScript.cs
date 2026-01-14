@@ -196,9 +196,10 @@ public class MonsterMovementScript : MonoBehaviour
                     }
 
                     yield return new WaitForSeconds(5f);
-                    Debug.Log($"ATF:{Time.time}");
                     SceneManager.LoadScene(gameObject.scene.name);
-                }else{
+                }
+                else
+                {
                     SetRandomPoint();
                     yield return new WaitForSeconds(3.5f);
                 }
