@@ -1,7 +1,7 @@
 using NavKeypad;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class DoorInteractScript : MonoBehaviour

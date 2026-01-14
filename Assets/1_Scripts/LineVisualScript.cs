@@ -23,8 +23,12 @@ public enum ComponentType
     Null,
     Item,
     Light,
-    GameObject
+    GameObject,
+    Door
 
+}
+public enum ActTiming{
+    After,Before
 }
 [Serializable]
 public struct TriggerBoxInfo{
@@ -38,17 +42,6 @@ public class LineVisualScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ScriptDisplay;
     IEnumerator CoPrintLine(List<Line> line){
         foreach(Line l in line){
-            yield return new WaitForSeconds(l.StartTime-0.1f);
-            ScriptDisplay.text = l.Content;
-            for(int i = 1; i <= 10; i++){
-                ScriptDisplay.color = new Color(ScriptDisplay.color.r,ScriptDisplay.color.g,ScriptDisplay.color.b,ScriptDisplay.color.a+0.1f);
-                yield return new WaitForSeconds(0.01f);
-            }
-            yield return new WaitForSeconds(l.Duration-0.1f);
-            for(int i = 0; i < 10; i++){
-                ScriptDisplay.color = new Color(ScriptDisplay.color.r,ScriptDisplay.color.g,ScriptDisplay.color.b,ScriptDisplay.color.a-0.1f);
-                yield return new WaitForSeconds(0.01f);
-            }
             switch (l.EventType)
             {
                 case ComponentType.Light:
@@ -66,9 +59,27 @@ public class LineVisualScript : MonoBehaviour
                 case ComponentType.GameObject:
                     l.EventComponent.SetActive(!l.EventComponent.activeSelf);
                     break;
+                case ComponentType.Door:
+                    if(l.EventComponent.layer == 0)
+                        l.EventComponent.layer = 7;
+                    else
+                        l.EventComponent.layer = 0;
+                    break;
                 default:
                 break;
             }
+            yield return new WaitForSeconds(l.StartTime);
+            ScriptDisplay.text = l.Content;
+            for(int i = 1; i <= 10; i++){
+                ScriptDisplay.color = new Color(ScriptDisplay.color.r,ScriptDisplay.color.g,ScriptDisplay.color.b,ScriptDisplay.color.a+0.1f);
+                yield return new WaitForSeconds(0.01f);
+            }
+            yield return new WaitForSeconds(l.Duration);
+            for(int i = 0; i < 10; i++){
+                ScriptDisplay.color = new Color(ScriptDisplay.color.r,ScriptDisplay.color.g,ScriptDisplay.color.b,ScriptDisplay.color.a-0.1f);
+                yield return new WaitForSeconds(0.01f);
+            }
+            
         }
     }
 

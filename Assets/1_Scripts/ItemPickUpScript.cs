@@ -60,6 +60,7 @@ public class ItemPickUpScript : MonoBehaviour
             //Debug.Log($"닿은 아이템 이름 {hit.collider.name}");//닿은 아이템 이름 로그에 남기기
             if(hit.collider != BeforeDetect && BeforeDetect != null){//콜라이더가 바뀌면(다른 아이템을 가리켰으면)
                 OffGuide();
+                BeforeDetect = null;
             }
             ActDescriptionTextUI.rectTransform.parent.gameObject.SetActive(true);
             ActDescriptionTextUI.text = $"{hit.collider.GetComponent<ItemScript>().Item.itemName} 줍기";
@@ -70,6 +71,7 @@ public class ItemPickUpScript : MonoBehaviour
         else if(BeforeDetect != null){
             OffGuide();
             AimPointScript.Item = false;
+            BeforeDetect = null;
         }
         GameObject HandleItem = inventoryManager.GetHand();
         if(HandleItem != null){//만일 손에 들 아이템이 있다면
