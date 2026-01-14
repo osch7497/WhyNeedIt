@@ -1646,7 +1646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: SightRange
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6325892811339499151, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: refreshRate
@@ -1664,6 +1664,10 @@ PrefabInstance:
       propertyPath: obstacleMask.m_Bits
       value: 1983
       objectReference: {fileID: 0}
+    - target: {fileID: 8774233182036346256, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7f51d4060e4ec4ddca0fdd5f6f4ad043, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23282,6 +23286,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1cd65ebeb03dc42b2b1b675cc8f0a69e, type: 3}
   - {fileID: 8300000, guid: 317d103dbd870417ab208a26346fb673, type: 3}
   - {fileID: 8300000, guid: b5da9bb75ccac47e1bacf5c48441ac30, type: 3}
+  - {fileID: 8300000, guid: 1ddc1747481054ad294518af2c2f8a0d, type: 3}
+  - {fileID: 8300000, guid: f4a6d39f4a95e4ffb8d33424573e47e8, type: 3}
   sfxSources: []
 --- !u!4 &781758594
 Transform:
@@ -49729,7 +49735,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2012395787}
     m_Modifications:
     - target: {fileID: 1885712140850390730, guid: 190b583f531e24e1abcd714baab34dbf, type: 3}
       propertyPath: m_AnchorMax.y
@@ -49916,6 +49922,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 190b583f531e24e1abcd714baab34dbf, type: 3}
+--- !u!224 &1671771910 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6433461762862865090, guid: 190b583f531e24e1abcd714baab34dbf, type: 3}
+  m_PrefabInstance: {fileID: 1671771909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1673767126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60330,6 +60341,7 @@ Transform:
   - {fileID: 113929616}
   - {fileID: 1085971924}
   - {fileID: 4777607664620119}
+  - {fileID: 1671771910}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2012744140
@@ -66246,7 +66258,6 @@ SceneRoots:
   - {fileID: 57159555}
   - {fileID: 1082928531}
   - {fileID: 2012395787}
-  - {fileID: 1671771909}
   - {fileID: 631733337}
   - {fileID: 548080487}
   - {fileID: 681945689}

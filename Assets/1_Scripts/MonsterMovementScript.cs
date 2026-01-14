@@ -83,9 +83,11 @@ public class MonsterMovementScript : MonoBehaviour
                             Anim.SetBool("run",false);
                             isRunning = false;
                             Anim.SetTrigger("Attack");
+                            AudioManager.instance.PlaySFX("BreakDoor", transform.position, volume:0.1f);
                             yield return new WaitForSeconds(0.7f);
                             Agent.speed = 0;
                             Hitinfo.collider.tag = "Untagged";
+                            
                             if(Hitinfo.collider.GetComponent<Animator>())
                                 Hitinfo.collider.GetComponent<Animator>().enabled = false;
                             if(Hitinfo.collider.GetComponent<Rigidbody>()==null){
@@ -103,6 +105,7 @@ public class MonsterMovementScript : MonoBehaviour
                             lastseenplayer = Time.time;
                             target = Hitinfo.collider.transform;
                             Debug.Log("I SAW PLAYER!!");
+                            AudioManager.instance.PlaySFX("MonsterScreaming", transform.position, volume:0.5f);
                             Head.GetComponent<AimConstraint>().weight = 1f;
                             StopCoroutine(co);
                             StartCoroutine(co);
