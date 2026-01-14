@@ -105,7 +105,7 @@ public class MonsterMovementScript : MonoBehaviour
                             lastseenplayer = Time.time;
                             target = Hitinfo.collider.transform;
                             Debug.Log("I SAW PLAYER!!");
-                            AudioManager.instance.PlaySFX("MonsterScreaming", transform.position, volume:0.5f);
+                            AudioManager.instance.PlaySFX("MonsterScreaming", transform.position, volume:0.77f);
                             Head.GetComponent<AimConstraint>().weight = 1f;
                             StopCoroutine(co);
                             StartCoroutine(co);
@@ -143,12 +143,13 @@ public class MonsterMovementScript : MonoBehaviour
                 Anim.SetBool("run",false);
                 isRunning = false;
                 if(target.CompareTag("Player")){
+                    AudioManager.instance.PlaySFX("MonsterAttackScreaming", transform.position, volume:0.6f);
                     target.GetComponent<FpsController>().OnAttacked(Head.transform);
                     Agent.speed = 0;
                     Agent.velocity = Vector3.zero;
                     Anim.SetTrigger("Attack");
                     Debug.Log($"ATS:{Time.time}");
-                    yield return new WaitForSeconds(2.3f);
+                    yield return new WaitForSeconds(5f);
                     Debug.Log($"ATF:{Time.time}");
                     SceneManager.LoadScene(gameObject.scene.name);
                 }else{
