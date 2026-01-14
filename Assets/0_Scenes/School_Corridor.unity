@@ -1582,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3614797478691427937, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4465214240201357817, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_LocalScale.x
@@ -22739,12 +22739,15 @@ GameObject:
   - component: {fileID: 762846814}
   - component: {fileID: 762846813}
   - component: {fileID: 762846815}
-  m_Layer: 0
+  - component: {fileID: 762846818}
+  - component: {fileID: 762846817}
+  - component: {fileID: 762846816}
+  m_Layer: 7
   m_Name: door02_door1
   m_TagString: LockedDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 127
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &762846812
 Transform:
@@ -22840,6 +22843,58 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.96, y: 1.99, z: 0.049999997}
   m_Center: {x: -0.46, y: 1.005, z: 0.020999998}
+--- !u!95 &762846816
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762846811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 040b3976830954859962f8db403cc8d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &762846817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762846811}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &762846818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762846811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba24274b42fb34931a04409bc191e991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSound
 --- !u!1 &763919402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1707064676450180, guid: 5512c233fd8b9ac49b4f5bfef170b92b, type: 3}
@@ -23221,6 +23276,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3acf7fe17c89a43b8971b25e5e6d40f9, type: 3}
   - {fileID: 8300000, guid: 38fe739fd91e440a7af6db680fcce9e8, type: 3}
   - {fileID: 8300000, guid: fbc95a42727e8448bbc266842dfd3bb7, type: 3}
+  - {fileID: 8300000, guid: 4eb6d84ffdea64786b18fc813f060a58, type: 3}
+  - {fileID: 8300000, guid: c464469a60e074e5f8f75af78f1040eb, type: 3}
   sfxSources: []
 --- !u!4 &781758594
 Transform:
@@ -32152,6 +32209,10 @@ PrefabInstance:
     - target: {fileID: 9125728597529141373, guid: 2ad38adf61795489684c067ecf19cc95, type: 3}
       propertyPath: m_Name
       value: Key01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125728597529141373, guid: 2ad38adf61795489684c067ecf19cc95, type: 3}
+      propertyPath: m_TagString
+      value: Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -47410,7 +47471,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 127
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1601105325
 Transform:
@@ -57597,6 +57658,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 762846812}
     m_Modifications:
+    - target: {fileID: 51580942719235798, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 127196949800442169, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749879802532045162, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3339730267293962390, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373858354028471425, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741528698531170649, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098938335383410919, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227673686986986155, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6227673687951279533, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.686
@@ -57644,6 +57737,46 @@ PrefabInstance:
     - target: {fileID: 6227673687951279535, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
       propertyPath: m_Name
       value: Keypad Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227673687951279535, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227673687951279535, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227673688236122325, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227673688764852492, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302780216770335999, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533682821957922398, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044485803619135010, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021307639042928364, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042059497600970239, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644479469842310679, guid: 70d702ef2046e44f99f4db4eaa05d478, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

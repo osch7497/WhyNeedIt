@@ -64,6 +64,9 @@ public class InventoryManager : MonoBehaviour
             holdingItem = Inventory[itemindex].GetComponent<ItemScript>().Item;        //오브젝트
             holdingObject = Inventory[itemindex];
         }
+        
+        AudioManager.instance.PlaySFX("DropFlashLight", Item.transform.position, volume:0.5f);
+        
         return ReturnValue;
 
     }
@@ -73,12 +76,25 @@ public class InventoryManager : MonoBehaviour
     public GameObject ThrowOutItem(){
         ItemIcons[SelectedIndex].sprite = null;//인벤토리 스프라이트를 비움
         ItemIcons[SelectedIndex].enabled = false;
+        
+        Item item = holdingItem;
+        GameObject obj = holdingObject;
+        
         holdingItem = null;
         holdingObject = null;
         if(Inventory[SelectedIndex] != null){
             GameObject ReturnValue = Inventory[SelectedIndex];//현재 사용중(이었던)아이템 미리 저장
             Inventory[SelectedIndex] = null;//인벤토리 비움
             ItemNames[SelectedIndex].text = "";//텍스트 없앰
+
+            if (item.itemName == "손전등")
+            {
+                AudioManager.instance.PlaySFX("DropFlashLight", obj.transform.position);
+            }
+            else if (item.itemName.EndsWith("열쇠"))
+            {
+                AudioManager.instance.PlaySFX("DropKey", obj.transform.position);
+            }
             return ReturnValue;//위에 저장한 아이템 리턴
         }
         else{
