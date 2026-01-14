@@ -46,8 +46,6 @@ public class MonsterMovementScript : MonoBehaviour
     float lastseenplayer;
     IEnumerator co;
 
-    bool isChasingSoundPlaying = false;
-
     void Awake()
     {
         Anim = GetComponent<Animator>();
@@ -131,13 +129,6 @@ public class MonsterMovementScript : MonoBehaviour
                     else if (Hitinfo.collider.CompareTag("Player"))
                     {
                         lastseenplayer = Time.time;
-
-                        if (!isChasingSoundPlaying)
-                        {
-                            AudioManager.instance.PlaySFX("MonsterChasing", transform.position, volume:3f, loop:true, is2D:true);
-                            isChasingSoundPlaying = true;
-                        }
-
                         if (!target.CompareTag("Player"))
                         {
                             Anim.SetTrigger("DetectPlayer");
@@ -190,12 +181,6 @@ public class MonsterMovementScript : MonoBehaviour
                     Agent.velocity = Vector3.zero;
                     Anim.SetTrigger("Attack");
 
-                    if (isChasingSoundPlaying)
-                    {
-                        AudioManager.instance.StopSFX("MonsterChasing");
-                        isChasingSoundPlaying = false;
-                    }
-
                     yield return new WaitForSeconds(5f);
                     SceneManager.LoadScene(gameObject.scene.name);
                 }
@@ -215,12 +200,6 @@ public class MonsterMovementScript : MonoBehaviour
         {
             Head.GetComponent<AimConstraint>().weight = 0f;
             SetRandomPoint();
-
-            if (isChasingSoundPlaying)
-            {
-                AudioManager.instance.StopSFX("MonsterChasing");
-                isChasingSoundPlaying = false;
-            }
         }
 
         timer += Time.deltaTime;
