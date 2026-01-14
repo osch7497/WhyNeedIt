@@ -5,11 +5,14 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class MonsterMovementScript : MonoBehaviour
 {
     NavMeshAgent Agent;
     Animator Anim;
+    private bool isRunning;
+    private float timer;
     [Header ("Now Target(monster tracing)")]
     [SerializeField]private Transform target;
     private Transform[] WayPoints;
@@ -78,6 +81,7 @@ public class MonsterMovementScript : MonoBehaviour
                             Agent.velocity = new Vector3(0,0,0);
                             Agent.speed = 0f;
                             Anim.SetBool("run",false);
+                            isRunning = false;
                             Anim.SetTrigger("Attack");
                             yield return new WaitForSeconds(0.7f);
                             Agent.speed = 0;
@@ -130,9 +134,11 @@ public class MonsterMovementScript : MonoBehaviour
             if(Vector3.Distance(transform.position,target.position) > PlayerAttackRange){
                     Agent.speed = 5;
                     Anim.SetBool("run",true);
+                    isRunning = true;
             }
             else{
                 Anim.SetBool("run",false);
+                isRunning = false;
                 if(target.CompareTag("Player")){
                     target.GetComponent<FpsController>().OnAttacked(Head.transform);
                     Agent.speed = 0;
@@ -145,8 +151,10 @@ public class MonsterMovementScript : MonoBehaviour
                 }else{
                     SetRandomPoint();
                     Anim.SetBool("run",false);
+                    isRunning = false;
                     yield return new WaitForSeconds(3.5f);
                     Anim.SetBool("run",true);
+                    isRunning = true;
                 }
             }
             yield return new WaitForSeconds(0.1f);
@@ -162,5 +170,26 @@ public class MonsterMovementScript : MonoBehaviour
             Head.GetComponent<AimConstraint>().weight = 0f;
             SetRandomPoint();   
         }
+        
+        timer += Time.deltaTime;
+
+        if (timer > 0.35f)
+        {
+            StartCoroutine(FootstepSound());
+            timer = 0f;
+        }
+    }
+    
+    IEnumerator FootstepSound()
+    {
+        string[] SFXs = { "MonsterFootstep1", "MonsterFootstep2", "MonsterFootstep3", "MonsterFootstep4" };
+
+        if (isRunning)
+        {
+            AudioManager.instance.PlaySFX(SFXs[Random.Range(0, SFXs.Length)], transform.position, volume:2f);
+            Debug.Log("monster is running now");
+        }
+        
+        yield return null;
     }
 }

@@ -1582,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3614797478691427937, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4465214240201357817, guid: 996e32c83d02b4f90aa4f37676b62ddd, type: 3}
       propertyPath: m_LocalScale.x
@@ -23278,6 +23278,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fbc95a42727e8448bbc266842dfd3bb7, type: 3}
   - {fileID: 8300000, guid: 4eb6d84ffdea64786b18fc813f060a58, type: 3}
   - {fileID: 8300000, guid: c464469a60e074e5f8f75af78f1040eb, type: 3}
+  - {fileID: 8300000, guid: ae53690d059944f228e5fedf21121622, type: 3}
+  - {fileID: 8300000, guid: 1cd65ebeb03dc42b2b1b675cc8f0a69e, type: 3}
+  - {fileID: 8300000, guid: 317d103dbd870417ab208a26346fb673, type: 3}
+  - {fileID: 8300000, guid: b5da9bb75ccac47e1bacf5c48441ac30, type: 3}
   sfxSources: []
 --- !u!4 &781758594
 Transform:
