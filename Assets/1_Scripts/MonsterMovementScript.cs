@@ -100,15 +100,20 @@ public class MonsterMovementScript : MonoBehaviour
                             StartCoroutine(co);
                             
                         }
-                        else if (Hitinfo.collider.CompareTag("Player") && !target.CompareTag("Player")){
+                        else if (Hitinfo.collider.CompareTag("Player")){
                             Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.red,refreshRate);
-                            lastseenplayer = Time.time;
-                            target = Hitinfo.collider.transform;
-                            Debug.Log("I SAW PLAYER!!");
-                            AudioManager.instance.PlaySFX("MonsterScreaming", transform.position, volume:0.5f);
-                            Head.GetComponent<AimConstraint>().weight = 1f;
-                            StopCoroutine(co);
-                            StartCoroutine(co);
+                            if(!target.CompareTag("Player")){
+                                lastseenplayer = Time.time;
+                                target = Hitinfo.collider.transform;
+                                Debug.Log("I SAW PLAYER!!");
+                                Anim.SetTrigger("DetectPlayer");
+                                //AudioManager.instance.PlaySFX("MonsterScreaming", transform.position, volume:0.5f);
+                                Head.GetComponent<AimConstraint>().weight = 1f;
+                                Agent.speed = 0;
+                                StopCoroutine(co);
+                                yield return new WaitForSeconds(2f);
+                                StartCoroutine(co);
+                            }
                         }
                         else{
                             if(((-SightAngle/DoorSightDivide)<NSA)&&((SightAngle/DoorSightDivide)>NSA))
