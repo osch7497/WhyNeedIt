@@ -1797,6 +1797,7 @@ MonoBehaviour:
   WayPointGroup: {fileID: 0}
   SightAngle: 90
   SightRange: 25
+  DoorSightDivide: 45
   TargetMask:
     serializedVersion: 2
     m_Bits: 0
@@ -1806,6 +1807,7 @@ MonoBehaviour:
   angle: 0.5
   refreshRate: 0.01
   Head: {fileID: 6461137320386865889}
+  PlayerAttackRange: 1.5
 --- !u!195 &2935509767956255318
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1816,7 +1818,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 300
@@ -1826,8 +1828,8 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 3
+  m_WalkableMask: 9
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3641543684074267986
 GameObject:
   m_ObjectHideFlags: 0
@@ -6216,6 +6218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6461137320386865889}
+  - component: {fileID: 1007699543615984183}
   m_Layer: 0
   m_Name: Character1_Head
   m_TagString: Untagged
@@ -6241,6 +6244,29 @@ Transform:
   - {fileID: 8041361475220973277}
   m_Father: {fileID: 6313778745012959130}
   m_LocalEulerAnglesHint: {x: -1.8617982, y: -9.050725, z: 7.8407164}
+--- !u!895512359 &1007699543615984183
+AimConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8433858435249403171}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AimVector: {x: 0, y: 0, z: 1}
+  m_UpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpObject: {fileID: 0}
+  m_UpType: 0
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_Active: 0
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &8455104144363577574
 GameObject:
   m_ObjectHideFlags: 0
