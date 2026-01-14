@@ -104,19 +104,21 @@ public class DoorInteractScript : MonoBehaviour
                 BeforeOutline.enabled = true;}
             else{
                 InteractiveUI.color = Color.white;
-                InteractiveUI.rectTransform.parent.gameObject.SetActive(false);
             }
             BeforeDetect = hit.collider;
             
         }
         else{
-            if(BeforeDetect != null&&BeforeOutline != null)
+            if(BeforeDetect != null&&BeforeOutline != null){
                 OffGuide();
+                BeforeDetect = null;
+            }
             InteractiveUI.color = Color.white;
         }
     }
     void OffGuide()
     {
+        InteractiveUI.rectTransform.parent.gameObject.SetActive(false);
         BeforeOutline.enabled = false;
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.Events;
 using System.Reflection;
 using System.Collections;
 using TMPro;
+using UnityEngine.UI;
 
 
 
@@ -27,63 +28,62 @@ public enum ComponentType
 }
 [Serializable]
 public struct TriggerBoxInfo{
-    public Line line;
     public GameObject TriggerBox;
+    public List<Line> line;
 }
 public class LineVisualScript : MonoBehaviour
 {
     [Header("Script Setting")]
     [SerializeField] private List<TriggerBoxInfo> scripts;
-    [SerializeField] private GameObject textPrefab;
-    [SerializeField] private Transform textUIGroup;
-    IEnumerator CoPrintLine(Line line){
-        yield return new WaitForSeconds(line.StartTime-0.1f);
-        Transform newLine = Instantiate(textPrefab).transform;
-        TextMeshProUGUI newText = newLine.GetComponent<TextMeshProUGUI>();
-        newLine.transform.parent = textUIGroup;
-        newText.text = line.Content;
-        for(int i = 1; i <= 10; i++){
-            newText.color = new Color(newText.color.r,newText.color.g,newText.color.b,newText.color.a+0.1f);
-            yield return new WaitForSeconds(0.01f);
-        }
-        yield return new WaitForSeconds(line.Duration-0.1f);
-        for(int i = 0; i < 10; i++){
-            newText.color = new Color(newText.color.r,newText.color.g,newText.color.b,newText.color.a-0.1f);
-            yield return new WaitForSeconds(0.01f);
-        }
-        switch (line.EventType)
-        {
-            case ComponentType.Light:
-                Light[] com = line.EventComponent.GetComponentsInChildren<Light>();
-                foreach(Light l in com)
-                    l.enabled = !l.enabled;
-                break;
-            case ComponentType.Item:
-                if(line.EventComponent.layer == 0)
-                    line.EventComponent.layer = 6;
-                else
-                    line.EventComponent.layer = 0;
+    [SerializeField] private TextMeshProUGUI ScriptDisplay;
+    IEnumerator CoPrintLine(List<Line> line){
+        foreach(Line l in line){
+            yield return new WaitForSeconds(l.StartTime-0.1f);
+            ScriptDisplay.text = l.Content;
+            for(int i = 1; i <= 10; i++){
+                ScriptDisplay.color = new Color(ScriptDisplay.color.r,ScriptDisplay.color.g,ScriptDisplay.color.b,ScriptDisplay.color.a+0.1f);
+                yield return new WaitForSeconds(0.01f);
+            }
+            yield return new WaitForSeconds(l.Duration-0.1f);
+            for(int i = 0; i < 10; i++){
+                ScriptDisplay.color = new Color(ScriptDisplay.color.r,ScriptDisplay.color.g,ScriptDisplay.color.b,ScriptDisplay.color.a-0.1f);
+                yield return new WaitForSeconds(0.01f);
+            }
+            switch (l.EventType)
+            {
+                case ComponentType.Light:
+                    Light[] com = l.EventComponent.GetComponentsInChildren<Light>();
+                    foreach(Light light in com)
+                        light.enabled = !light.enabled;
+                    break;
+                case ComponentType.Item:
+                    if(l.EventComponent.layer == 0)
+                        l.EventComponent.layer = 6;
+                    else
+                        l.EventComponent.layer = 0;
 
+                    break;
+                case ComponentType.GameObject:
+                    l.EventComponent.SetActive(!l.EventComponent.activeSelf);
+                    break;
+                default:
                 break;
-            case ComponentType.GameObject:
-                line.EventComponent.SetActive(!line.EventComponent.activeSelf);
-                break;
-            default:
-            break;
+            }
         }
-        Destroy(newLine.gameObject);
     }
 
     public void Awake()
     {
         foreach(TriggerBoxInfo TBX in scripts){
-            TriggerBoxScript newTriggerBox = TBX.TriggerBox.AddComponent<TriggerBoxScript>();
-            newTriggerBox.line = TBX.line;
-            newTriggerBox.ScriptUI = this;
+            if(TBX.TriggerBox.GetComponent<TriggerBoxScript>() == null){
+                TriggerBoxScript newTriggerBox = TBX.TriggerBox.AddComponent<TriggerBoxScript>();
+                newTriggerBox.line = TBX.line;
+                newTriggerBox.ScriptUI = this;
+            }
         }
     }
-    public void PrintLine(Line line){
-        IEnumerator co =  CoPrintLine(line);
+    public void PrintLine(List<Line> line){
+        IEnumerator co = CoPrintLine(line);
         StartCoroutine(co);
     }
 }
