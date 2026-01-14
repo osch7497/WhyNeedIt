@@ -102,9 +102,8 @@ public class MonsterMovementScript : MonoBehaviour
                         }
                         else if (Hitinfo.collider.CompareTag("Player")){
                             Debug.DrawRay(ShotPos,ShotRad * Hitinfo.distance,Color.red,refreshRate);
+                            lastseenplayer = Time.time;
                             if(!target.CompareTag("Player")){
-                                lastseenplayer = Time.time;
-                                target = Hitinfo.collider.transform;
                                 Debug.Log("I SAW PLAYER!!");
                                 Anim.SetTrigger("DetectPlayer");
                                 //AudioManager.instance.PlaySFX("MonsterScreaming", transform.position, volume:0.5f);
@@ -112,6 +111,8 @@ public class MonsterMovementScript : MonoBehaviour
                                 Agent.speed = 0;
                                 StopCoroutine(co);
                                 yield return new WaitForSeconds(2f);
+                                lastseenplayer = Time.time;
+                                target = Hitinfo.collider.transform;
                                 StartCoroutine(co);
                             }
                         }
