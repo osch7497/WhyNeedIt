@@ -13,8 +13,9 @@ public class MonsterMovementScript : MonoBehaviour
     Animator Anim;
     private bool isRunning;
     private float timer;
+    [SerializeField]private GameObject DiedUI;
     [Header ("Now Target(monster tracing)")]
-    [SerializeField]private Transform target;
+    [SerializeField]private Transform target; 
     private Transform[] WayPoints;
     [Header("TargetGroup")]
     [SerializeField] private Transform WayPointGroup;
@@ -157,7 +158,7 @@ public class MonsterMovementScript : MonoBehaviour
                     Debug.Log($"ATS:{Time.time}");
                     yield return new WaitForSeconds(5f);
                     Debug.Log($"ATF:{Time.time}");
-                    SceneManager.LoadScene(gameObject.scene.name);
+                    DiedUI.gameObject.SetActive(true);
                 }else{
                     SetRandomPoint();
                     Anim.SetBool("run",false);
