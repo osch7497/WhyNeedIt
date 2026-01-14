@@ -13,10 +13,9 @@ public class MonsterMovementScript : MonoBehaviour
 
     private bool isRunning;
     private float timer;
-
-    [Header("Now Target(monster tracing)")]
-    [SerializeField] private Transform target;
-
+    [SerializeField]private GameObject DiedUI;
+    [Header ("Now Target(monster tracing)")]
+    [SerializeField]private Transform target; 
     private Transform[] WayPoints;
 
     [Header("TargetGroup")]
