@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySFX(string clipName, Vector3 position, float pitch = 1f, float volume = 1f)
+    public void PlaySFX(string clipName, Vector3 position, float pitch = 1f, float volume = 1f, bool loop = false, bool is2D = false)
     {
         if (!sfxDictionary.TryGetValue(clipName, out AudioClip clip))
         {
@@ -86,6 +86,27 @@ public class AudioManager : MonoBehaviour
         availableSource.transform.position = position;
         availableSource.pitch = pitch;
         availableSource.volume = volume;
+        availableSource.loop = loop;
+        availableSource.spatialBlend = is2D ? 0f : 1f;
         availableSource.Play();
     }
+    
+    public void StopSFX(string clipName)
+    {
+        if (!sfxDictionary.TryGetValue(clipName, out AudioClip clip))
+        {
+            Debug.LogWarning($"Audio '{clipName}' not found in dictionary!");
+            return;
+        }
+
+        foreach (var source in sfxSources)
+        {
+            if (source.isPlaying && source.clip == clip)
+            {
+                source.Stop();
+                source.clip = null;
+            }
+        }
+    }
+
 }
